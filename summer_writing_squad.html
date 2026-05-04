@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summer Writing Squad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --purple-deep:   #2D1B69;
+      --purple-mid:    #534AB7;
+      --purple-dark:   #3C3489;
+      --purple-darker: #1a0f3d;
+      --gold-light:    #FAD98A;
+      --gold-mid:      #FAC775;
+      --gold-dark:     #EF9F27;
+      --gold-deeper:   #BA7517;
+      --teal:          #9FE1CB;
+      --coral:         #F5C4B3;
+      --page-bg:       #FFF8F0;
+      --border:        #D3D1C7;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--page-bg);
+      min-height: 100vh;
+      color: var(--purple-deep);
+    }
+
+    /* HEADER */
+    header {
+      background: var(--purple-deep);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 80px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(255,255,255,0.03) 12px, rgba(255,255,255,0.03) 14px);
+      pointer-events: none;
+    }
+    .header-brand { display: flex; align-items: center; gap: 14px; z-index: 1; text-decoration: none; }
+    .header-logo-wrap { width: 52px; height: 52px; flex-shrink: 0; }
+    .brand-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; color: var(--gold-mid); line-height: 1.1; }
+    .brand-sub { font-size: 11px; font-weight: 700; color: #9F8FD4; letter-spacing: 0.12em; text-transform: uppercase; }
+    .header-tagline { font-size: 17px; color: rgba(255,255,255,0.55); font-style: italic; z-index: 1; }
+
+    /* HERO */
+    .hero { display: grid; grid-template-columns: 1fr 1fr; min-height: 340px; background: var(--purple-deep); position: relative; }
+    .hero::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 52px; background: var(--page-bg); clip-path: ellipse(55% 100% at 50% 100%); }
+    .hero-left { padding: 3rem 2rem 5rem 2.5rem; display: flex; flex-direction: column; justify-content: center; }
+    .hero-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; color: var(--gold-dark); text-transform: uppercase; margin-bottom: 12px; animation: fadeUp 0.6s ease both; }
+    .hero-headline { font-family: 'Playfair Display', serif; font-size: 40px; font-weight: 900; color: #fff; line-height: 1.15; margin-bottom: 16px; animation: fadeUp 0.6s 0.1s ease both; }
+    .hero-headline span { color: var(--gold-mid); }
+    .hero-body { font-size: 15px; color: rgba(255,255,255,0.7); line-height: 1.75; max-width: 360px; animation: fadeUp 0.6s 0.2s ease both; }
+    .hero-right { display: flex; align-items: center; justify-content: center; padding: 2rem 2rem 5rem 0; }
+    .hero-logo-big { width: 230px; height: 230px; filter: drop-shadow(0 10px 36px rgba(0,0,0,0.4)); animation: float 4s ease-in-out infinite, fadeIn 0.8s 0.3s ease both; }
+
+    @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+    /* DESTINATION BUTTONS */
+    .nav-section { padding: 2.5rem 2rem 0; max-width: 900px; margin: 0 auto; }
+    .nav-label { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; color: var(--gold-deeper); text-transform: uppercase; margin-bottom: 1rem; }
+    .nav-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .nav-btn { display: flex; align-items: flex-start; gap: 14px; padding: 1.1rem 2.5rem 1.1rem 1.25rem; border-radius: 16px; border: none; cursor: pointer; text-align: left; transition: transform 0.15s ease, box-shadow 0.15s ease; position: relative; overflow: hidden; text-decoration: none; }
+    .nav-btn:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(0,0,0,0.13); }
+    .nav-btn:active { transform: translateY(-1px); }
+    .btn-history     { background: var(--gold-mid); }
+    .btn-science     { background: var(--teal); }
+    .btn-letters     { background: #AFA9EC; }
+    .btn-discoveries { background: var(--coral); }
+    .btn-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 20px; background: rgba(0,0,0,0.1); }
+    .btn-title { font-size: 15px; font-weight: 800; color: var(--purple-deep); line-height: 1.2; margin-bottom: 4px; }
+    .btn-desc { font-size: 12px; color: rgba(45,27,105,0.65); line-height: 1.5; }
+    .btn-arrow { position: absolute; right: 14px; top: 50%; transform: translateY(-50%); font-size: 20px; color: rgba(45,27,105,0.35); transition: right 0.15s ease, color 0.15s ease; }
+    .nav-btn:hover .btn-arrow { right: 10px; color: rgba(45,27,105,0.7); }
+
+    /* TOPIC TAGS */
+    .doodle-strip { max-width: 900px; margin: 2rem auto 0; padding: 0 2rem; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .doodle-tag { background: white; border: 2px dashed var(--border); border-radius: 10px; padding: 6px 16px; font-size: 12px; font-weight: 700; color: #5F5E5A; white-space: nowrap; cursor: pointer; transition: all 0.15s ease; }
+    .doodle-tag:hover, .doodle-tag.active { background: var(--purple-deep); color: var(--gold-mid); border-color: var(--purple-deep); }
+    .doodle-divider { font-size: 14px; color: var(--border); flex-shrink: 0; }
+
+    /* ABOUT STRIP */
+    .about-strip { max-width: 900px; margin: 2.5rem auto 0; padding: 0 2rem; }
+    .about-card { background: var(--purple-deep); border-radius: 20px; padding: 2rem 2.5rem; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; }
+    .about-item { text-align: center; }
+    .about-icon { font-size: 28px; margin-bottom: 10px; }
+    .about-title { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--gold-mid); margin-bottom: 6px; }
+    .about-desc { font-size: 12px; color: rgba(255,255,255,0.6); line-height: 1.6; }
+
+    /* FOOTER */
+    footer { margin-top: 3rem; background: var(--purple-deep); padding: 1.25rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+    .footer-text { font-size: 12px; color: rgba(255,255,255,0.4); }
+    .footer-brand { font-family: 'Playfair Display', serif; font-size: 14px; color: var(--gold-mid); font-weight: 700; }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: 1fr; }
+      .hero-right { display: none; }
+      .hero-headline { font-size: 30px; }
+      .nav-grid { grid-template-columns: 1fr; }
+      .about-card { grid-template-columns: 1fr; gap: 1.5rem; }
+      .header-tagline { display: none; }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <a class="header-brand" href="#">
+      <div class="header-logo-wrap">
+        <svg viewBox="0 0 320 430" xmlns="http://www.w3.org/2000/svg" width="52" height="52">
+          <polygon points="150,8 157,72 188,22 172,78 214,42 190,86 248,76 208,108 258,128 208,134 234,188 192,160 202,216 150,184 98,216 108,160 66,188 92,134 42,128 92,108 52,76 110,86 86,42 128,78 112,22 143,72" fill="#FAD98A"/>
+          <rect x="118" y="286" width="22" height="54" rx="10" fill="#2D1B69"/>
+          <rect x="160" y="286" width="22" height="54" rx="10" fill="#2D1B69"/>
+          <ellipse cx="129" cy="342" rx="18" ry="9" fill="#1a0f3d"/>
+          <ellipse cx="171" cy="342" rx="18" ry="9" fill="#1a0f3d"/>
+          <rect x="106" y="212" width="88" height="82" rx="18" fill="#534AB7"/>
+          <line x1="106" y1="232" x2="82" y2="272" stroke="#3C3489" stroke-width="26" stroke-linecap="round"/>
+          <line x1="106" y1="232" x2="82" y2="272" stroke="#534AB7" stroke-width="20" stroke-linecap="round"/>
+          <line x1="194" y1="232" x2="228" y2="276" stroke="#534AB7" stroke-width="20" stroke-linecap="round"/>
+          <ellipse cx="150" cy="166" rx="54" ry="52" fill="#D4956A"/>
+          <ellipse cx="116" cy="118" rx="15" ry="20" fill="#2D1B69" transform="rotate(-18 116 118)"/>
+          <ellipse cx="150" cy="111" rx="16" ry="21" fill="#2D1B69"/>
+          <ellipse cx="184" cy="118" rx="15" ry="20" fill="#2D1B69" transform="rotate(18 184 118)"/>
+          <g transform="rotate(-13 122 166)"><rect x="100" y="152" width="44" height="36" rx="18" fill="white" stroke="#2D1B69" stroke-width="3"/><circle cx="122" cy="170" r="12" fill="#2D1B69"/></g>
+          <g transform="rotate(13 178 166)"><rect x="156" y="152" width="44" height="36" rx="18" fill="white" stroke="#2D1B69" stroke-width="3"/><circle cx="178" cy="170" r="12" fill="#2D1B69"/></g>
+          <path d="M128 196 Q150 216 172 196" stroke="#2D1B69" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <div class="brand-name"><span style="color:#FAC775;">Summer</span></div>
+        <div class="brand-sub">Writing Squad</div>
+      </div>
+    </a>
+    <div class="header-tagline">Where odd ideas become great writing</div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">Welcome, squad member</div>
+      <h1 class="hero-headline">Writing is<br><span>odd.</span><br>That's the point.</h1>
+      <p class="hero-body">Summer Writing Squad brings curious kids together to explore wild history, strange science, and outrageous discoveries — and write about all of it.</p>
+    </div>
+    <div class="hero-right">
+      <svg class="hero-logo-big" viewBox="0 0 320 430" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="150,8 157,72 188,22 172,78 214,42 190,86 248,76 208,108 258,128 208,134 234,188 192,160 202,216 150,184 98,216 108,160 66,188 92,134 42,128 92,108 52,76 110,86 86,42 128,78 112,22 143,72" fill="#FAD98A"/>
+        <polygon points="22,44 26,57 39,57 29,65 33,78 22,70 11,78 15,65 5,57 18,57" fill="#1D9E75" opacity="0.85"/>
+        <circle cx="238" cy="52" r="11" fill="#D85A30" opacity="0.8"/>
+        <circle cx="238" cy="52" r="6" fill="#F0997B" opacity="0.9"/>
+        <path d="M14,148 Q24,138 14,128 Q4,118 14,108" stroke="#639922" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+        <polygon points="264,118 274,130 264,142 254,130" fill="#1D9E75" opacity="0.8"/>
+        <circle cx="244" cy="200" r="6" fill="#639922" opacity="0.8"/>
+        <circle cx="258" cy="188" r="4" fill="#639922" opacity="0.6"/>
+        <polygon points="24,210 28,222 40,222 31,229 34,241 24,234 14,241 17,229 8,222 20,222" fill="#D85A30" opacity="0.7"/>
+        <rect x="118" y="286" width="22" height="54" rx="10" fill="#2D1B69"/>
+        <rect x="160" y="286" width="22" height="54" rx="10" fill="#2D1B69"/>
+        <ellipse cx="129" cy="342" rx="18" ry="9" fill="#1a0f3d"/>
+        <ellipse cx="171" cy="342" rx="18" ry="9" fill="#1a0f3d"/>
+        <rect x="106" y="212" width="88" height="82" rx="18" fill="#534AB7"/>
+        <path d="M130 214 Q150 226 170 214" stroke="#2D1B69" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <rect x="114" y="244" width="20" height="16" rx="4" fill="#3C3489"/>
+        <line x1="106" y1="232" x2="82" y2="272" stroke="#3C3489" stroke-width="26" stroke-linecap="round"/>
+        <line x1="106" y1="232" x2="82" y2="272" stroke="#534AB7" stroke-width="20" stroke-linecap="round"/>
+        <g transform="translate(82, 272) rotate(-40)">
+          <rect x="-5" y="-66" width="10" height="9" rx="3" fill="#F0997B"/>
+          <rect x="-5" y="-57" width="10" height="7" rx="1" fill="#B4B2A9"/>
+          <rect x="-5" y="-50" width="10" height="34" rx="1" fill="#FAC775"/>
+          <rect x="-3.5" y="-48" width="3" height="30" rx="1.5" fill="white" opacity="0.25"/>
+          <rect x="-5" y="12" width="10" height="16" rx="1" fill="#FAC775"/>
+          <rect x="-5" y="28" width="10" height="8" rx="1" fill="#F5C4B3"/>
+          <polygon points="-5,36 5,36 0,50" fill="#2C2C2A"/>
+        </g>
+        <g transform="translate(82, 272) rotate(-40)">
+          <ellipse cx="0" cy="0" rx="13" ry="12" fill="#D4956A" stroke="#B87040" stroke-width="2.5"/>
+          <path d="M-8 -6 Q0 -11 8 -6" stroke="#B87040" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+          <ellipse cx="11" cy="2" rx="5" ry="4" fill="#D4956A" stroke="#B87040" stroke-width="1.5"/>
+        </g>
+        <line x1="194" y1="232" x2="228" y2="276" stroke="#534AB7" stroke-width="20" stroke-linecap="round"/>
+        <g transform="translate(238, 278) rotate(12)">
+          <rect x="3" y="3" width="72" height="90" rx="2" fill="#C8C8C8" opacity="0.35"/>
+          <rect x="0" y="0" width="72" height="90" rx="2" fill="white" stroke="#D3D1C7" stroke-width="0.8"/>
+          <line x1="16" y1="0" x2="16" y2="90" stroke="#F4A0B0" stroke-width="1.4"/>
+          <line x1="0" y1="13" x2="72" y2="13" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="23" x2="72" y2="23" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="33" x2="72" y2="33" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="43" x2="72" y2="43" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="53" x2="72" y2="53" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="63" x2="72" y2="63" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="73" x2="72" y2="73" stroke="#B5D4F4" stroke-width="0.85"/>
+          <line x1="0" y1="83" x2="72" y2="83" stroke="#B5D4F4" stroke-width="0.85"/>
+          <circle cx="8" cy="20" r="4" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.8"/>
+          <circle cx="8" cy="45" r="4" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.8"/>
+          <circle cx="8" cy="70" r="4" fill="#F1EFE8" stroke="#D3D1C7" stroke-width="0.8"/>
+        </g>
+        <g transform="translate(228, 276) rotate(-10)">
+          <ellipse cx="0" cy="0" rx="12" ry="11" fill="#D4956A" stroke="#B87040" stroke-width="2"/>
+          <path d="M-7 -5 Q0 -10 7 -5" stroke="#B87040" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.55"/>
+          <ellipse cx="10" cy="3" rx="5" ry="4" fill="#D4956A" stroke="#B87040" stroke-width="1.5"/>
+        </g>
+        <ellipse cx="150" cy="166" rx="54" ry="52" fill="#D4956A"/>
+        <ellipse cx="96" cy="168" rx="10" ry="13" fill="#D4956A" stroke="#B87040" stroke-width="1.5"/>
+        <ellipse cx="96" cy="168" rx="6" ry="8" fill="#C07850" opacity="0.5"/>
+        <ellipse cx="204" cy="168" rx="10" ry="13" fill="#D4956A" stroke="#B87040" stroke-width="1.5"/>
+        <ellipse cx="204" cy="168" rx="6" ry="8" fill="#C07850" opacity="0.5"/>
+        <ellipse cx="116" cy="118" rx="15" ry="20" fill="#2D1B69" transform="rotate(-18 116 118)"/>
+        <ellipse cx="150" cy="111" rx="16" ry="21" fill="#2D1B69"/>
+        <ellipse cx="184" cy="118" rx="15" ry="20" fill="#2D1B69" transform="rotate(18 184 118)"/>
+        <ellipse cx="132" cy="114" rx="10" ry="15" fill="#2D1B69" transform="rotate(-8 132 114)"/>
+        <ellipse cx="168" cy="114" rx="10" ry="15" fill="#2D1B69" transform="rotate(8 168 114)"/>
+        <path d="M106 142 Q120 132 132 137" stroke="#2D1B69" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <path d="M168 140 Q182 136 194 141" stroke="#2D1B69" stroke-width="4" fill="none" stroke-linecap="round"/>
+        <g transform="rotate(-13 122 166)">
+          <rect x="100" y="152" width="44" height="36" rx="18" fill="white" stroke="#2D1B69" stroke-width="3"/>
+          <circle cx="122" cy="170" r="12" fill="#2D1B69"/>
+          <circle cx="126" cy="166" r="3.8" fill="white"/>
+        </g>
+        <g transform="rotate(13 178 166)">
+          <rect x="156" y="152" width="44" height="36" rx="18" fill="white" stroke="#2D1B69" stroke-width="3"/>
+          <circle cx="178" cy="170" r="12" fill="#2D1B69"/>
+          <circle cx="182" cy="166" r="3.8" fill="white"/>
+        </g>
+        <path d="M144 168 Q150 165 156 168" stroke="#2D1B69" stroke-width="2.8" fill="none"/>
+        <ellipse cx="150" cy="182" rx="5" ry="4" fill="#B87040"/>
+        <path d="M128 196 Q150 216 172 196" stroke="#2D1B69" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <path d="M132 199 Q150 214 168 199" fill="white" opacity="0.7"/>
+        <ellipse cx="112" cy="188" rx="10" ry="7" fill="#C07850" opacity="0.3"/>
+        <ellipse cx="188" cy="188" rx="10" ry="7" fill="#C07850" opacity="0.3"/>
+        <rect x="16" y="374" width="268" height="42" rx="5" fill="#2D1B69"/>
+        <polygon points="16,374 35,395 16,416" fill="#1a0f3d"/>
+        <polygon points="284,374 265,395 284,416" fill="#1a0f3d"/>
+        <text text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" letter-spacing="2.5">
+          <tspan x="150" y="392" fill="#FAC775">SUMMER</tspan>
+        </text>
+        <text x="150" y="408" text-anchor="middle" font-family="Georgia, serif" font-size="10" font-weight="700" fill="white" letter-spacing="3">WRITING SQUAD</text>
+      </svg>
+    </div>
+  </section>
+
+  <!-- DESTINATION BUTTONS -->
+  <section class="nav-section">
+    <div class="nav-label">Pick your destination</div>
+    <div class="nav-grid">
+
+      <a href="history.html" class="nav-btn btn-history">
+        <div class="btn-icon">&#127963;&#65039;</div>
+        <div>
+          <div class="btn-title">Today in History</div>
+          <div class="btn-desc">Discover what happened on this day and write about it</div>
+        </div>
+        <span class="btn-arrow">&#8594;</span>
+      </a>
+
+      <a href="science.html" class="nav-btn btn-science">
+        <div class="btn-icon">&#128300;</div>
+        <div>
+          <div class="btn-title">Strange Science</div>
+          <div class="btn-desc">Odd experiments and bizarre phenomena waiting to be written about</div>
+        </div>
+        <span class="btn-arrow">&#8594;</span>
+      </a>
+
+      <a href="letters.html" class="nav-btn btn-letters">
+        <div class="btn-icon">&#9993;&#65039;</div>
+        <div>
+          <div class="btn-title">Letters to Family</div>
+          <div class="btn-desc">Write real letters to the people who matter most</div>
+        </div>
+        <span class="btn-arrow">&#8594;</span>
+      </a>
+
+      <a href="discoveries.html" class="nav-btn btn-discoveries">
+        <div class="btn-icon">&#127755;</div>
+        <div>
+          <div class="btn-title">Outrageous Discoveries</div>
+          <div class="btn-desc">Mind-blowing finds from history, nature, and beyond</div>
+        </div>
+        <span class="btn-arrow">&#8594;</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- TOPIC TAGS -->
+  <div class="doodle-strip">
+    <div class="doodle-tag active">Today in History</div>
+    <div class="doodle-divider">&#10022;</div>
+    <div class="doodle-tag">Strange Science</div>
+    <div class="doodle-divider">&#10022;</div>
+    <div class="doodle-tag">Letters to Family</div>
+    <div class="doodle-divider">&#10022;</div>
+    <div class="doodle-tag">Outrageous Discoveries</div>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <div class="about-strip">
+    <div class="about-card">
+      <div class="about-item">
+        <div class="about-icon">&#9999;&#65039;</div>
+        <div class="about-title">Write About Anything</div>
+        <div class="about-desc">History, science, family — every topic is a writing adventure waiting to happen.</div>
+      </div>
+      <div class="about-item">
+        <div class="about-icon">&#129302;</div>
+        <div class="about-title">Get Feedback on Your Work</div>
+        <div class="about-desc">Submit your writing and get real feedback from our AI — encouraging, specific, and fun.</div>
+      </div>
+      <div class="about-item">
+        <div class="about-icon">&#127885;</div>
+        <div class="about-title">You're a Squad Member</div>
+        <div class="about-desc">Not a class. Not homework. A squad — where writers choose to show up and get better together.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-text">&#169; 2026 Summer Writing Squad &middot; summerwritingsquad.com</div>
+    <div class="footer-brand"><span style="color:#FAC775;">Summer</span> Writing Squad</div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.doodle-tag').forEach(function(tag) {
+      tag.addEventListener('click', function() {
+        document.querySelectorAll('.doodle-tag').forEach(function(t) { t.classList.remove('active'); });
+        tag.classList.add('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
