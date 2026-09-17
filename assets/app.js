@@ -1,22 +1,19 @@
 const GRADES = ["K", "1", "2", "3", "4", "5", "6", "7", "8"];
-const DESTINATIONS = {
-  history: { title: "Today in History", klass: "btn-history", href: "history.html" },
-  science: { title: "Strange Science", klass: "btn-science", href: "science.html" },
-  letters: { title: "Letters to Family", klass: "btn-letters", href: "letters.html" },
-  discoveries: { title: "Outrageous Discoveries", klass: "btn-discoveries", href: "discoveries.html" }
-};
 
-const Squad = {
+const Coach = {
   user: null,
 
   async api(path, options = {}) {
-    const opts = { credentials: "include", headers: { "Content-Type": "application/json", ...(options.headers || {}) }, ...options };
+    const opts = {
+      credentials: "include",
+      headers: { "Content-Type": "application/json", ...(options.headers || {}) },
+      ...options
+    };
     const res = await fetch(path, opts);
     const data = await res.json().catch(() => ({}));
     if (!res.ok) {
       const err = new Error(data.detail || res.statusText);
       err.status = res.status;
-      err.data = data;
       throw err;
     }
     return data;
@@ -46,51 +43,72 @@ const Squad = {
     ).join("");
   },
 
-  header(active) {
+  header() {
     const el = document.getElementById("site-header");
     if (!el) return;
     const signed = this.user;
     el.innerHTML = `
       <a class="header-brand" href="index.html">
-        <div class="header-mark">S</div>
+        <div class="header-mark">EWC</div>
         <div>
-          <div class="brand-name">Summer</div>
-          <div class="brand-sub">Writing Squad</div>
+          <div class="brand-name">Early Writing Coach</div>
+          <div class="brand-sub">earlywritingcoach.ai</div>
         </div>
       </a>
       <nav class="header-nav">
-        <a href="history.html">History</a>
-        <a href="science.html">Science</a>
-        <a href="letters.html">Letters</a>
-        <a href="discoveries.html">Discoveries</a>
-        <a href="account.html">${signed ? "Account" : "Sign in"}</a>
-        <a class="btn-gold" href="write.html">Start writing</a>
+        <a href="booklets.html">Printable booklets</a>
+        <a href="account.html">${signed ? "Saved notes" : "Sign in"}</a>
+        <a class="btn-main" href="write.html">Submit writing</a>
       </nav>`;
   },
 
   footer() {
     const el = document.getElementById("site-footer");
     if (!el) return;
-    el.innerHTML = `<div>© 2026 Summer Writing Squad · Scores against K–8 ELA writing standards in all 50 states and DC</div><strong>Summer Writing Squad</strong>`;
+    el.innerHTML = `<div>Early Writing Coach · earlywritingcoach.ai · earlywritingcoach.com · Writing samples are not stored.</div><strong>Save coaching notes on your computer.</strong>`;
   },
 
   params() {
     return new URLSearchParams(location.search);
   },
 
-  saveDraft(draft) {
-    sessionStorage.setItem("squad-draft", JSON.stringify(draft));
-  },
-
-  loadDraft() {
-    try { return JSON.parse(sessionStorage.getItem("squad-draft") || "null"); }
-    catch { return null; }
+  downloadNote(result) {
+    const focuses = (result.focuses || []).map((f) => `
+      <h2>${escapeHtml(f.title)}</h2>
+      <p>${escapeHtml(f.noticed)}</p>
+      <h3>Practice at home</h3>
+      <ol>${(f.home_practice || []).map((s) => `<li>${escapeHtml(s)}</li>`).join("")}</ol>
+      <h3>What to tell the teacher</h3>
+      <p>${escapeHtml(f.teacher_share)}</p>
+      ${(f.standards || []).map((s) => `<p><strong>${escapeHtml(s.code)}</strong> — ${escapeHtml(s.text)}</p>`).join("")}
+    `).join("<hr>");
+    const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${escapeHtml(result.save_filename || "coaching-note")}</title>
+      <style>body{font-family:Georgia,serif;max-width:720px;margin:2rem auto;line-height:1.45;color:#1C1917} h1{font-size:28px} .warn{background:#F4E3C7;padding:12px;border-radius:8px}</style></head>
+      <body>
+        <p class="warn"><strong>Save this file on your computer.</strong> Early Writing Coach does not keep the child’s writing. This note only names the skills you are reinforcing.</p>
+        <h1>Early Writing Coach note</h1>
+        <p>${escapeHtml(result.state_name)}, grade ${escapeHtml(result.grade)} · ${escapeHtml(result.assignment_label || "")}</p>
+        <p>${escapeHtml(result.framework)}</p>
+        ${focuses}
+      </body></html>`;
+    const blob = new Blob([html], { type: "text/html" });
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = result.save_filename || "early-writing-coach-note.html";
+    a.click();
+    URL.revokeObjectURL(a.href);
   }
 };
 
+function escapeHtml(value) {
+  return String(value || "").replace(/[&<>"']/g, (ch) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[ch]));
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
-  await Squad.refreshUser();
-  Squad.header();
-  Squad.footer();
-  if (typeof window.onSquadReady === "function") window.onSquadReady();
+  await Coach.refreshUser();
+  Coach.header();
+  Coach.footer();
+  if (typeof window.onCoachReady === "function") window.onCoachReady();
 });

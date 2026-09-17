@@ -8,9 +8,9 @@
   },
   "free_assessments": 3,
   "plans": {
-    "free": { "name": "Try it", "price": 0, "assessments": 3, "blurb": "Three scored pieces so you can see how the coach works." },
-    "family": { "name": "Family", "price_month": 9, "assessments": null, "blurb": "Unlimited scoring for kids in one household, any state and grade K–8." },
-    "classroom": { "name": "Classroom", "price_month": 19, "assessments": null, "blurb": "Unlimited scoring plus a simple roster for one class." }
+    "free": { "name": "Try it", "price": 0, "notes": 3, "blurb": "Three coaching notes so you can see how home practice is named — writing samples are not stored." },
+    "family": { "name": "Family", "price_month": 9, "notes": null, "blurb": "Unlimited coaching notes for one household, any state and grade K–8. We keep the skill notes, not the writing." },
+    "classroom": { "name": "Tutor / classroom", "price_month": 19, "notes": null, "blurb": "Unlimited notes for a tutor or one class, to share with families and teachers." }
   },
   "length_bands": {
     "K": { "developing": 8, "meeting": 18, "exceeding": 40 },

@@ -3,56 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Writing report · Summer Writing Squad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/squad.css">
+  <title>Coaching note · Early Writing Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/coach.css">
 </head>
 <body>
   <header class="site-header" id="site-header"></header>
-  <main class="wrap">
-    <div class="kicker">Coach report</div>
-    <div id="report"></div>
-  </main>
+  <div class="save-cue" id="save-cue" hidden></div>
+  <main class="wrap" id="report"></main>
   <footer class="site-footer" id="site-footer"></footer>
   <script src="assets/app.js"></script>
   <script>
-    window.onSquadReady = async function () {
-      const params = Squad.params();
-      let result = null;
-      if (params.get("id") && Squad.user) {
-        result = await Squad.api("/api/assessments/" + params.get("id"));
+    let savedOnDevice = false;
+    let current = null;
+
+    function renderCue(result) {
+      const cue = document.getElementById("save-cue");
+      cue.hidden = false;
+      cue.innerHTML = `
+        <strong>Save this note now.</strong>
+        ${result.save_cue}
+        <ol>${(result.save_where || []).map((s) => `<li>${s}</li>`).join("")}</ol>
+        <div class="save-actions">
+          <button class="btn btn-leaf" id="download">Save this note to your computer</button>
+          <button class="btn btn-secondary" id="print">Print this note</button>
+        </div>
+        <p class="muted" style="margin-top:8px">File name: <code>${result.save_filename}</code> → usually your Downloads folder.</p>`;
+      document.getElementById("download").onclick = async () => {
+        Coach.downloadNote(result);
+        savedOnDevice = true;
+        if (result.id && Coach.user) {
+          await Coach.api("/api/notes/" + result.id + "/saved", { method: "POST", body: "{}" });
+        }
+      };
+      document.getElementById("print").onclick = () => { savedOnDevice = true; window.print(); };
+    }
+
+    window.onCoachReady = async function () {
+      const params = Coach.params();
+      if (params.get("id") && Coach.user) {
+        current = await Coach.api("/api/notes/" + params.get("id"));
       } else {
-        result = JSON.parse(sessionStorage.getItem("squad-result") || "null");
+        current = JSON.parse(sessionStorage.getItem("ewc-note") || "null");
       }
       const root = document.getElementById("report");
-      if (!result) {
-        root.innerHTML = '<p class="lede">No report yet. <a href="write.html">Write a piece</a> and we’ll score it.</p>';
+      if (!current) {
+        root.innerHTML = '<p class="lede">No note yet. <a href="write.html">Submit a writing sample</a> — then save the coaching note, because the writing is not kept.</p>';
         return;
       }
-      const constructs = (result.constructs || []).map((c) => `
-        <article class="card">
-          <div style="display:flex;justify-content:space-between;gap:12px;align-items:baseline">
-            <h2>${c.name}</h2>
-            <div class="level level-${c.score}">${c.label}</div>
+      renderCue(current);
+      const focuses = (current.focuses || []).map((f) => `
+        <article class="card focus">
+          <div class="kicker">Focus skill</div>
+          <h2>${f.title}</h2>
+          <p>${f.noticed}</p>
+          <h3 style="margin:14px 0 8px">How to reinforce this at home</h3>
+          <ol class="practice">${(f.home_practice || []).map((s) => `<li>${s}</li>`).join("")}</ol>
+          <div class="teacher-box">
+            <h3>What to tell the teacher</h3>
+            <p>${f.teacher_share}</p>
           </div>
-          <p style="margin:8px 0 12px">${c.kid_note}</p>
-          ${(c.standards || []).map((s) => `<div class="standard-row"><code>${s.code}</code> — ${s.text}</div>`).join("")}
+          ${(f.standards || []).map((s) => `<div class="standard-row"><code>${s.code}</code> — ${s.text}</div>`).join("")}
         </article>`).join("");
       root.innerHTML = `
-        <div class="score-hero">
-          <div class="score-badge">${result.overall}<span>${result.overall_label}</span></div>
-          <div>
-            <h1 class="page-title" style="color:white">${result.prompt_title || "Your writing"}</h1>
-            <p>Scored for ${result.state_name}, grade ${result.grade}, ${result.genre} writing.</p>
-            <p class="muted" style="color:#AFA9EC;margin-top:8px">${result.framework} · ${result.word_count} words · ${result.sentence_count} sentences</p>
-          </div>
+        <div class="kicker">${current.state_name} · grade ${current.grade}</div>
+        <h1 class="page-title">${current.assignment_label || "Coaching note"}</h1>
+        <p class="lede">${current.framework}. This is not a score. It is the one or two skills to practice so school instruction has something to attach to.</p>
+        <div class="diagram">
+          <div class="gone">Writing sample<br><strong>discarded</strong></div>
+          <div class="arrow">→</div>
+          <div>${(current.focuses || []).length} skill${(current.focuses || []).length === 1 ? "" : "s"} to reinforce</div>
+          <div class="arrow">→</div>
+          <div>Teacher conversation</div>
         </div>
-        <p class="lede" style="margin:1.25rem 0">${result.framework_note}</p>
-        <div class="grid" style="gap:16px">${constructs}</div>
-        <p style="margin-top:1.5rem">
-          <a class="btn btn-primary" href="write.html">Write another</a>
-          <a class="btn btn-secondary" href="account.html" style="margin-left:8px">Save progress</a>
-        </p>`;
+        <div class="grid" style="gap:16px">${focuses}</div>
+        <p class="no-print" style="margin-top:1.5rem"><a class="btn btn-secondary" href="write.html">Another assignment</a></p>`;
+      window.addEventListener("beforeunload", (ev) => {
+        if (!savedOnDevice) {
+          ev.preventDefault();
+          ev.returnValue = "Save the coaching note before you leave. The writing sample is not stored.";
+        }
+      });
     };
   </script>
 </body>

@@ -1,3 +1,4 @@
+backend/coach.db
 backend/squad.db
 __pycache__/
 *.pyc

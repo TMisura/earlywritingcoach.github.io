@@ -3,40 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account · Summer Writing Squad</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/squad.css">
+  <title>Saved notes · Early Writing Coach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/coach.css">
 </head>
 <body>
   <header class="site-header" id="site-header"></header>
   <main class="wrap">
-    <div class="kicker">Household account</div>
-    <h1 class="page-title">Subscription and writer profile</h1>
-    <p class="lede">Free accounts include three scored pieces. Family and classroom plans unlock unlimited scoring against your state’s K–8 writing standards.</p>
+    <div class="kicker">Household</div>
+    <h1 class="page-title">Skill notes you can take to school</h1>
+    <p class="lede">These records name what you have been reinforcing at home. They never include the child’s writing. Download any note you still need on paper or on your computer.</p>
     <div id="account"></div>
   </main>
   <footer class="site-footer" id="site-footer"></footer>
   <script src="assets/app.js"></script>
   <script>
-    window.onSquadReady = async function () {
+    window.onCoachReady = async function () {
       const root = document.getElementById("account");
-      const plans = await Squad.api("/api/plans");
+      const plans = await Coach.api("/api/plans");
       function planCards(current) {
         return Object.entries(plans).map(([id, p]) => `
           <div class="plan ${current === id ? "active" : ""}">
-            <div class="btn-title">${p.name}</div>
+            <div class="kicker">${p.name}</div>
             <div class="price">${p.price_month ? "$" + p.price_month + "/mo" : "Free"}</div>
-            <p class="btn-desc">${p.blurb}</p>
+            <p class="muted">${p.blurb}</p>
             ${id === "free" ? "" : `<button class="btn btn-primary" data-plan="${id}" style="margin-top:12px">${current === id ? "Current plan" : "Activate demo"}</button>`}
           </div>`).join("");
       }
-      if (!Squad.user) {
+      if (!Coach.user) {
         root.innerHTML = `
           <div class="grid grid-2" style="margin-top:1.5rem">
             <form class="card" id="register">
               <h2>Create account</h2>
               <div style="margin-top:12px"><label>Your name</label><input name="name" required></div>
-              <div style="margin-top:12px"><label>Writer’s name</label><input name="writer_name" placeholder="Kid's first name"></div>
+              <div style="margin-top:12px"><label>Writer’s name</label><input name="writer_name"></div>
               <div style="margin-top:12px"><label>Email</label><input name="email" type="email" required></div>
               <div style="margin-top:12px"><label>Password</label><input name="password" type="password" minlength="6" required></div>
               <div class="row">
@@ -56,13 +56,12 @@
           </div>
           <h2 style="margin:2rem 0 1rem">Plans</h2>
           <div class="grid grid-3">${planCards("free")}</div>`;
-        Squad.fillGrades(document.getElementById("reg-grade"), "3");
-        await Squad.fillStates(document.getElementById("reg-state"), "CA");
+        Coach.fillGrades(document.getElementById("reg-grade"), "3");
+        await Coach.fillStates(document.getElementById("reg-state"), "CA");
         document.getElementById("register").addEventListener("submit", async (ev) => {
           ev.preventDefault();
-          const fd = new FormData(ev.target);
           try {
-            await Squad.api("/api/auth/register", { method: "POST", body: JSON.stringify(Object.fromEntries(fd.entries())) });
+            await Coach.api("/api/auth/register", { method: "POST", body: JSON.stringify(Object.fromEntries(new FormData(ev.target).entries())) });
             location.reload();
           } catch (e) {
             const err = document.getElementById("reg-err");
@@ -71,9 +70,8 @@
         });
         document.getElementById("login").addEventListener("submit", async (ev) => {
           ev.preventDefault();
-          const fd = new FormData(ev.target);
           try {
-            await Squad.api("/api/auth/login", { method: "POST", body: JSON.stringify(Object.fromEntries(fd.entries())) });
+            await Coach.api("/api/auth/login", { method: "POST", body: JSON.stringify(Object.fromEntries(new FormData(ev.target).entries())) });
             location.reload();
           } catch (e) {
             const err = document.getElementById("login-err");
@@ -82,14 +80,15 @@
         });
         return;
       }
-      const left = Squad.user.remaining_assessments;
-      const history = await Squad.api("/api/assessments");
+      const left = Coach.user.remaining_notes;
+      const history = await Coach.api("/api/notes");
       root.innerHTML = `
         <div class="card" style="margin:1.5rem 0">
-          <p>Signed in as <strong>${Squad.user.email}</strong> · plan <strong>${Squad.user.plan}</strong>
-            ${left == null ? "· unlimited scoring" : "· " + left + " free scores left"}</p>
+          <p>Signed in as <strong>${Coach.user.email}</strong> · ${Coach.user.plan}
+            ${left == null ? "· unlimited notes" : "· " + left + " free notes left"}</p>
+          <p class="muted">Account storage is recommendations only. Writing samples are never in this list.</p>
           <form id="profile" class="row" style="margin-top:1rem">
-            <div><label>Writer</label><input name="writer_name" value="${Squad.user.writer_name || ""}"></div>
+            <div><label>Writer</label><input name="writer_name" value="${Coach.user.writer_name || ""}"></div>
             <div><label>State</label><select name="state" id="me-state"></select></div>
             <div><label>Grade</label><select name="grade" id="me-grade"></select></div>
           </form>
@@ -97,33 +96,30 @@
             <button class="btn btn-primary" id="save">Save profile</button>
             <button class="btn btn-secondary" id="logout">Sign out</button>
           </div>
-          <p class="ok" id="saved" hidden>Saved.</p>
         </div>
         <h2 style="margin:1rem 0">Plans</h2>
-        <p class="muted" style="margin-bottom:1rem">Stripe live checkout is the next backend slice. Demo activation unlocks the plan on this site now.</p>
-        <div class="grid grid-3">${planCards(Squad.user.plan)}</div>
-        <h2 style="margin:2rem 0 1rem">Scored writing</h2>
-        <div class="grid">${history.assessments.map((a) => `
-          <a class="card" href="report.html?id=${a.id}" style="text-decoration:none">
-            <div class="btn-title">${a.prompt_title || a.genre}</div>
-            <div class="muted">Grade ${a.grade} · ${a.state} · ${a.overall_label}</div>
+        <div class="grid grid-3">${planCards(Coach.user.plan)}</div>
+        <h2 style="margin:2rem 0 1rem">Saved coaching notes</h2>
+        <p class="muted" style="margin-bottom:1rem">Open a note and use Save this note if you still need a file on your computer.</p>
+        <div class="grid">${history.notes.map((n) => `
+          <a class="card" href="report.html?id=${n.id}" style="text-decoration:none;color:inherit">
+            <div class="kicker">${n.saved_on_device ? "Saved on your device" : "Save a copy"}</div>
+            <h2 style="font-size:20px">${n.assignment_label || "School assignment"}</h2>
+            <p class="muted">Grade ${n.grade} · ${n.state} · ${(n.titles || []).join(" · ")}</p>
           </a>`).join("") || "<p class='muted'>None yet.</p>"}</div>`;
-      Squad.fillGrades(document.getElementById("me-grade"), Squad.user.grade);
-      await Squad.fillStates(document.getElementById("me-state"), Squad.user.state);
-      document.getElementById("save").addEventListener("click", async () => {
-        const form = document.getElementById("profile");
-        const fd = new FormData(form);
-        await Squad.api("/api/me", { method: "POST", body: JSON.stringify(Object.fromEntries(fd.entries())) });
-        document.getElementById("saved").hidden = false;
-      });
-      document.getElementById("logout").addEventListener("click", async () => {
-        await Squad.api("/api/auth/logout", { method: "POST", body: "{}" });
+      Coach.fillGrades(document.getElementById("me-grade"), Coach.user.grade);
+      await Coach.fillStates(document.getElementById("me-state"), Coach.user.state);
+      document.getElementById("save").onclick = async () => {
+        await Coach.api("/api/me", { method: "POST", body: JSON.stringify(Object.fromEntries(new FormData(document.getElementById("profile")).entries())) });
+      };
+      document.getElementById("logout").onclick = async () => {
+        await Coach.api("/api/auth/logout", { method: "POST", body: "{}" });
         location.reload();
-      });
+      };
       root.querySelectorAll("[data-plan]").forEach((btn) => {
         btn.addEventListener("click", async () => {
           if (btn.textContent === "Current plan") return;
-          await Squad.api("/api/subscribe", { method: "POST", body: JSON.stringify({ plan: btn.dataset.plan }) });
+          await Coach.api("/api/subscribe", { method: "POST", body: JSON.stringify({ plan: btn.dataset.plan }) });
           location.reload();
         });
       });

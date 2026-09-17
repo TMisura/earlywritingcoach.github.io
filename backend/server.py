@@ -16,15 +16,15 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-from assess import assess, rubric, standards_for, state_meta, states
+from assess import coach, rubric, standards_for, state_meta, states
 
 ROOT = Path(__file__).resolve().parents[1]
-DB_PATH = Path(os.environ.get("SQUAD_DB", ROOT / "backend" / "squad.db"))
-SECRET = os.environ.get("SQUAD_SECRET", "dev-only-change-me")
-COOKIE = "squad_session"
+DB_PATH = Path(os.environ.get("COACH_DB", os.environ.get("SQUAD_DB", ROOT / "backend" / "coach.db")))
+SECRET = os.environ.get("COACH_SECRET", os.environ.get("SQUAD_SECRET", "dev-only-change-me"))
+COOKIE = "ewc_session"
 MAX_AGE = 60 * 60 * 24 * 30
 
-app = FastAPI(title="Summer Writing Squad", version="0.4.0")
+app = FastAPI(title="Early Writing Coach", version="0.5.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -57,16 +57,15 @@ def init_db() -> None:
               writer_name TEXT DEFAULT '',
               created_at INTEGER NOT NULL
             );
-            CREATE TABLE IF NOT EXISTS assessments (
+            CREATE TABLE IF NOT EXISTS recommendations (
               id INTEGER PRIMARY KEY AUTOINCREMENT,
               user_id INTEGER,
               state TEXT NOT NULL,
               grade TEXT NOT NULL,
-              genre TEXT NOT NULL,
-              prompt_title TEXT,
-              text TEXT NOT NULL,
-              result_json TEXT NOT NULL,
+              assignment_label TEXT,
+              focus_json TEXT NOT NULL,
               created_at INTEGER NOT NULL,
+              saved_on_device_at INTEGER,
               FOREIGN KEY(user_id) REFERENCES users(id)
             );
             """
@@ -93,8 +92,7 @@ def sign_session(user_id: int) -> str:
 def read_session(token: str) -> Optional[int]:
     try:
         user_id, ts, sig = token.split(":")
-        payload = f"{user_id}:{ts}"
-        expected = hmac.new(SECRET.encode(), payload.encode(), hashlib.sha256).hexdigest()
+        expected = hmac.new(SECRET.encode(), f"{user_id}:{ts}".encode(), hashlib.sha256).hexdigest()
         if not hmac.compare_digest(sig, expected):
             return None
         return int(user_id)
@@ -124,14 +122,13 @@ def set_session(response: Response, user_id: int) -> None:
     response.set_cookie(COOKIE, sign_session(user_id), httponly=True, samesite="lax", max_age=MAX_AGE)
 
 
-def remaining_assessments(user: sqlite3.Row) -> Optional[int]:
-    plan = user["plan"]
-    if plan in {"family", "classroom"}:
+def remaining_notes(user: sqlite3.Row) -> Optional[int]:
+    if user["plan"] in {"family", "classroom"}:
         return None
-    limit = rubric()["plans"]["free"]["assessments"]
+    limit = rubric()["plans"]["free"]["notes"]
     with db() as conn:
         used = conn.execute(
-            "SELECT COUNT(*) AS n FROM assessments WHERE user_id = ?", (user["id"],)
+            "SELECT COUNT(*) AS n FROM recommendations WHERE user_id = ?", (user["id"],)
         ).fetchone()["n"]
     return max(0, limit - used)
 
@@ -160,15 +157,39 @@ class SubscribeIn(BaseModel):
     plan: str = "family"
 
 
-class AssessIn(BaseModel):
+class CoachIn(BaseModel):
     text: str = Field(min_length=1)
     state: str = "CA"
     grade: str = "3"
-    genre: str = "informative"
-    prompt_title: str = ""
+    assignment_label: str = ""
+    genre: str = "any"
 
 
-PROMPTS = json.loads((ROOT / "data" / "prompts.json").read_text()) if (ROOT / "data" / "prompts.json").exists() else {}
+def current_user_by_id(uid: int) -> sqlite3.Row:
+    with db() as conn:
+        return conn.execute("SELECT * FROM users WHERE id = ?", (uid,)).fetchone()
+
+
+def user_payload(user: sqlite3.Row) -> dict:
+    return {
+        "id": user["id"],
+        "email": user["email"],
+        "name": user["name"],
+        "plan": user["plan"],
+        "state": user["state"],
+        "grade": user["grade"],
+        "writer_name": user["writer_name"],
+        "remaining_notes": remaining_notes(user),
+    }
+
+
+def public_note(row: sqlite3.Row) -> dict:
+    payload = json.loads(row["focus_json"])
+    payload["id"] = row["id"]
+    payload["created_at"] = row["created_at"]
+    payload["saved_on_device"] = bool(row["saved_on_device_at"])
+    payload["writing_stored"] = False
+    return payload
 
 
 @app.on_event("startup")
@@ -178,7 +199,7 @@ def _startup() -> None:
 
 @app.get("/api/health")
 def health():
-    return {"ok": True, "jurisdictions": len(states())}
+    return {"ok": True, "product": "earlywritingcoach", "jurisdictions": len(states()), "stores_writing": False}
 
 
 @app.get("/api/states")
@@ -198,30 +219,9 @@ def get_standards(state: str = "CA", grade: str = "3"):
     return {"state": meta, "grade": str(grade).upper(), "standards": items}
 
 
-@app.get("/api/prompts")
-def prompts(destination: str = "history", grade: str = "3"):
-    grade = str(grade).upper()
-    dest = PROMPTS.get(destination, {})
-    items = dest.get(grade) or dest.get("3") or []
-    return {"destination": destination, "grade": grade, "prompts": items}
-
-
 @app.get("/api/plans")
 def plans():
     return rubric()["plans"]
-
-
-def user_payload(user: sqlite3.Row) -> dict:
-    return {
-        "id": user["id"],
-        "email": user["email"],
-        "name": user["name"],
-        "plan": user["plan"],
-        "state": user["state"],
-        "grade": user["grade"],
-        "writer_name": user["writer_name"],
-        "remaining_assessments": remaining_assessments(user),
-    }
 
 
 @app.post("/api/auth/register")
@@ -247,14 +247,8 @@ def register(body: RegisterIn, response: Response):
             uid = cur.lastrowid
         except sqlite3.IntegrityError:
             raise HTTPException(409, "That email already has an account.")
-    user = current_user_by_id(uid)
     set_session(response, uid)
-    return user_payload(user)
-
-
-def current_user_by_id(uid: int) -> sqlite3.Row:
-    with db() as conn:
-        return conn.execute("SELECT * FROM users WHERE id = ?", (uid,)).fetchone()
+    return user_payload(current_user_by_id(uid))
 
 
 @app.post("/api/auth/login")
@@ -304,87 +298,96 @@ def subscribe(body: SubscribeIn, request: Request):
     user = require_user(request)
     if body.plan not in {"family", "classroom"}:
         raise HTTPException(400, "Choose family or classroom.")
-    # Live Stripe checkout is the next backend slice. Demo activation makes the
-    # product usable locally and on preview hosts without keys.
     with db() as conn:
         conn.execute("UPDATE users SET plan=? WHERE id=?", (body.plan, user["id"]))
     return {"ok": True, "plan": body.plan, "mode": "demo", "user": user_payload(current_user_by_id(user["id"]))}
 
 
-@app.post("/api/assess")
-def run_assess(body: AssessIn, request: Request):
+@app.post("/api/coach")
+def run_coach(body: CoachIn, request: Request):
     user = current_user(request)
     if user:
-        left = remaining_assessments(user)
+        left = remaining_notes(user)
         if left == 0:
-            raise HTTPException(402, "Free plan includes three scored pieces. Upgrade to keep going.")
+            raise HTTPException(402, "Free plan includes three coaching notes. Open a family plan to keep going.")
     try:
-        result = assess(body.text, body.state, body.grade, body.genre)
+        result = coach(body.text, body.state, body.grade, body.assignment_label, body.genre)
     except (KeyError, ValueError) as exc:
         raise HTTPException(400, str(exc)) from exc
+    # Never persist body.text. Only skill notes are stored for signed-in parents.
     uid = user["id"] if user else None
-    with db() as conn:
-        cur = conn.execute(
-            "INSERT INTO assessments (user_id, state, grade, genre, prompt_title, text, result_json, created_at) VALUES (?,?,?,?,?,?,?,?)",
-            (
-                uid,
-                result["state"],
-                result["grade"],
-                result["genre"],
-                body.prompt_title,
-                body.text,
-                json.dumps(result),
-                int(time.time()),
-            ),
-        )
-        aid = cur.lastrowid
-    result["id"] = aid
-    result["saved"] = uid is not None
-    if user:
-        result["remaining_assessments"] = remaining_assessments(current_user_by_id(user["id"]))
+    note_id = None
+    if uid:
+        with db() as conn:
+            cur = conn.execute(
+                "INSERT INTO recommendations (user_id, state, grade, assignment_label, focus_json, created_at) VALUES (?,?,?,?,?,?)",
+                (
+                    uid,
+                    result["state"],
+                    result["grade"],
+                    result["assignment_label"],
+                    json.dumps(result),
+                    int(time.time()),
+                ),
+            )
+            note_id = cur.lastrowid
+        result["remaining_notes"] = remaining_notes(current_user_by_id(uid))
+    result["id"] = note_id
+    result["account_kept_writing"] = False
     return result
 
 
-@app.get("/api/assessments")
-def list_assessments(request: Request):
+@app.get("/api/notes")
+def list_notes(request: Request):
     user = require_user(request)
     with db() as conn:
         rows = conn.execute(
-            "SELECT id, state, grade, genre, prompt_title, created_at, result_json FROM assessments WHERE user_id=? ORDER BY id DESC LIMIT 50",
+            "SELECT id, state, grade, assignment_label, created_at, saved_on_device_at, focus_json FROM recommendations WHERE user_id=? ORDER BY id DESC LIMIT 50",
             (user["id"],),
         ).fetchall()
-    out = []
+    notes = []
     for row in rows:
-        result = json.loads(row["result_json"])
-        out.append(
+        payload = json.loads(row["focus_json"])
+        notes.append(
             {
                 "id": row["id"],
                 "state": row["state"],
                 "grade": row["grade"],
-                "genre": row["genre"],
-                "prompt_title": row["prompt_title"],
+                "assignment_label": row["assignment_label"],
                 "created_at": row["created_at"],
-                "overall": result.get("overall"),
-                "overall_label": result.get("overall_label"),
+                "saved_on_device": bool(row["saved_on_device_at"]),
+                "titles": [f["title"] for f in payload.get("focuses", [])],
             }
         )
-    return {"assessments": out}
+    return {"notes": notes, "stores_writing": False}
 
 
-@app.get("/api/assessments/{aid}")
-def get_assessment(aid: int, request: Request):
+@app.get("/api/notes/{note_id}")
+def get_note(note_id: int, request: Request):
     user = require_user(request)
     with db() as conn:
         row = conn.execute(
-            "SELECT * FROM assessments WHERE id=? AND user_id=?", (aid, user["id"])
+            "SELECT * FROM recommendations WHERE id=? AND user_id=?", (note_id, user["id"])
         ).fetchone()
     if not row:
         raise HTTPException(404, "Not found")
-    result = json.loads(row["result_json"])
-    result["id"] = row["id"]
-    result["text"] = row["text"]
-    result["prompt_title"] = row["prompt_title"]
-    return result
+    return public_note(row)
+
+
+@app.post("/api/notes/{note_id}/saved")
+def mark_saved(note_id: int, request: Request):
+    user = require_user(request)
+    with db() as conn:
+        cur = conn.execute(
+            "UPDATE recommendations SET saved_on_device_at=? WHERE id=? AND user_id=?",
+            (int(time.time()), note_id, user["id"]),
+        )
+        if cur.rowcount == 0:
+            raise HTTPException(404, "Not found")
+    return {
+        "ok": True,
+        "cue": "This coaching note is marked as saved on your device. Keep the downloaded file or the printout — the writing sample is still not stored here.",
+    }
 
 
 @app.get("/")
