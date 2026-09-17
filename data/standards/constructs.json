@@ -1,0 +1,45 @@
+{
+  "constructs": {
+    "opinion": {
+      "name": "Opinion / argument",
+      "what_we_score": "Claim or opinion, reasons, and a closing"
+    },
+    "informative": {
+      "name": "Informative / explanatory",
+      "what_we_score": "Topic, facts or details, and a closing"
+    },
+    "narrative": {
+      "name": "Narrative",
+      "what_we_score": "Sequenced events, details, and an ending"
+    },
+    "correspondence": {
+      "name": "Letters and correspondence",
+      "what_we_score": "Audience, purpose, and letter conventions"
+    },
+    "organization": {
+      "name": "Organization and coherence",
+      "what_we_score": "Structure appropriate to task and purpose"
+    },
+    "process": {
+      "name": "Writing process",
+      "what_we_score": "Planning, revising, and editing"
+    },
+    "conventions": {
+      "name": "Language conventions",
+      "what_we_score": "Grammar, capitalization, punctuation, spelling"
+    },
+    "research": {
+      "name": "Research and evidence",
+      "what_we_score": "Using sources or recalled information"
+    }
+  },
+  "genre_map": {
+    "opinion": "opinion",
+    "argument": "opinion",
+    "informative": "informative",
+    "expository": "informative",
+    "narrative": "narrative",
+    "letter": "correspondence",
+    "correspondence": "correspondence"
+  }
+}

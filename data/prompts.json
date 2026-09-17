@@ -1,0 +1,130 @@
+{
+  "history": {
+    "K": [
+      { "title": "A long-ago tool", "genre": "informative", "text": "People used to write with feathers dipped in ink. Draw or write what that might have looked like." },
+      { "title": "The first day of school, then", "genre": "narrative", "text": "Imagine a kid going to school 100 years ago. Tell what happens first, next, and last." }
+    ],
+    "1": [
+      { "title": "The day the lights came on", "genre": "informative", "text": "Long ago many homes had no electric lights. Write two facts about how people saw at night, then tell what you think about that." },
+      { "title": "If I met a history helper", "genre": "letter", "text": "Write a short letter to a firefighter, nurse, or teacher from long ago. Thank them and ask one question." }
+    ],
+    "2": [
+      { "title": "A day that changed a town", "genre": "narrative", "text": "Pick a real event from this week in history. Tell the story of one kid who was there." },
+      { "title": "Should we still study this?", "genre": "opinion", "text": "Pick a person from history. Write whether kids should still learn about them, and give two reasons." }
+    ],
+    "3": [
+      { "title": "Today in history", "genre": "informative", "text": "Choose something that happened on this date. Explain what happened, who was there, and why it still matters." },
+      { "title": "Letter to the past", "genre": "letter", "text": "Write a letter to a child who lived 150 years ago. Tell them one thing about your life and ask about theirs." }
+    ],
+    "4": [
+      { "title": "A turning point", "genre": "informative", "text": "Explain a historical turning point in three parts: what life was like before, what changed, and what came next." },
+      { "title": "Who belongs in the story?", "genre": "opinion", "text": "Should history class include more ordinary kids and families, not only famous leaders? Take a side and support it." }
+    ],
+    "5": [
+      { "title": "Cause and effect", "genre": "informative", "text": "Pick a historical event. Explain at least two causes and two effects, using linking words." },
+      { "title": "Monument argument", "genre": "opinion", "text": "A town wants a new monument. Argue what it should honor and why." }
+    ],
+    "6": [
+      { "title": "Primary source detective", "genre": "informative", "text": "Imagine you found a diary page from this week in history. Explain what a historian could learn from it, and what they still would not know." },
+      { "title": "Was it worth it?", "genre": "opinion", "text": "Choose a hard choice a historical figure made. Argue whether it was worth the cost." }
+    ],
+    "7": [
+      { "title": "Then and now", "genre": "informative", "text": "Compare a right, job, or daily habit from the past with today. Explain what changed and what did not." },
+      { "title": "Rewrite the headline", "genre": "opinion", "text": "Take a historical event often told one way. Argue for another way of telling it, using reasons and evidence." }
+    ],
+    "8": [
+      { "title": "Civic memory", "genre": "informative", "text": "Explain how a community remembers a historical event (holiday, monument, story) and what that memory leaves out." },
+      { "title": "Policy from the past", "genre": "opinion", "text": "Should a past law or policy be studied as a warning, a model, or both? Argue your claim." }
+    ]
+  },
+  "science": {
+    "K": [
+      { "title": "A weird animal trick", "genre": "informative", "text": "Pick an animal that does something odd. Tell one thing it does and why that might help it." }
+    ],
+    "1": [
+      { "title": "Why is the sky that color?", "genre": "informative", "text": "Write what you notice about the sky and one idea for why it looks that way." }
+    ],
+    "2": [
+      { "title": "If I shrank", "genre": "narrative", "text": "Write a story about shrinking to the size of an ant for one hour. What do you notice?" }
+    ],
+    "3": [
+      { "title": "Strange but true", "genre": "informative", "text": "Explain a surprising science fact. Include what happens, why scientists think it happens, and one example." },
+      { "title": "Should we try it?", "genre": "opinion", "text": "Scientists want to try a wild experiment (growing food on a roof, a robot class pet). Should they? Give reasons." }
+    ],
+    "4": [
+      { "title": "How it works", "genre": "informative", "text": "Explain how a simple system works (the water cycle, a seed becoming a plant, a flashlight)." }
+    ],
+    "5": [
+      { "title": "Claim from evidence", "genre": "opinion", "text": "Make a claim about a science question (Do we need more recess outside?). Support it with facts a reader can check." }
+    ],
+    "6": [
+      { "title": "Design a test", "genre": "informative", "text": "Describe a fair test for a question you care about. Name the variable, what you would measure, and what would count as evidence." }
+    ],
+    "7": [
+      { "title": "Systems thinking", "genre": "informative", "text": "Pick a system (a wetland, a city power grid, your own body). Explain how parts work together and what happens if one part fails." }
+    ],
+    "8": [
+      { "title": "Science in public", "genre": "opinion", "text": "Should a new technology (AI homework helper, gene editing, space mining) be allowed for kids your age? Argue with reasons and limits." }
+    ]
+  },
+  "letters": {
+    "K": [
+      { "title": "Dear someone I love", "genre": "letter", "text": "Write or dictate a letter to a family member. Tell them one thing you did today." }
+    ],
+    "1": [
+      { "title": "Thank-you note", "genre": "letter", "text": "Write a thank-you letter. Name the person, the thing they did, and how it made you feel." }
+    ],
+    "2": [
+      { "title": "Please and why", "genre": "letter", "text": "Write a letter asking a grown-up for something you want. Give two fair reasons." }
+    ],
+    "3": [
+      { "title": "News from camp", "genre": "letter", "text": "Write a letter home about a real or imagined day. Include something funny, something hard, and a question." },
+      { "title": "Letter to a hero", "genre": "letter", "text": "Write to someone who helps your town. Tell what you notice and ask one thoughtful question." }
+    ],
+    "4": [
+      { "title": "Family history ask", "genre": "letter", "text": "Write to a relative asking about a story from their childhood. Explain why you want to know." }
+    ],
+    "5": [
+      { "title": "The case for a change", "genre": "letter", "text": "Write a persuasive letter to a principal, coach, or parent asking for one change. Use reasons and a respectful tone." }
+    ],
+    "6": [
+      { "title": "Two audiences", "genre": "letter", "text": "Write a letter to a younger kid explaining a family tradition. Then add a P.S. to an adult with a different detail." }
+    ],
+    "7": [
+      { "title": "Open letter", "genre": "letter", "text": "Write an open letter about a community issue. Name the audience, the problem, and one action you want." }
+    ],
+    "8": [
+      { "title": "Letter across time", "genre": "letter", "text": "Write to your future self at 18. Tell them what you believe now, what you are working on, and what you hope they remember." }
+    ]
+  },
+  "discoveries": {
+    "K": [
+      { "title": "I found this", "genre": "informative", "text": "Tell about something you found outside or in a book. What is it? What is odd about it?" }
+    ],
+    "1": [
+      { "title": "A tiny discovery", "genre": "narrative", "text": "Write about a time you noticed something small that other people missed." }
+    ],
+    "2": [
+      { "title": "Wait, that's real?", "genre": "informative", "text": "Explain a surprising discovery (a deep-sea animal, a planet, a cave). Give two facts." }
+    ],
+    "3": [
+      { "title": "Outrageous but true", "genre": "informative", "text": "Pick a wild discovery. Explain what people thought before, what was found, and why it matters." },
+      { "title": "Should we look closer?", "genre": "opinion", "text": "Is it better to explore space, the ocean, or the past next? Pick one and defend it." }
+    ],
+    "4": [
+      { "title": "How they knew", "genre": "informative", "text": "Explain how a scientist, explorer, or kid inventor knew they had found something new." }
+    ],
+    "5": [
+      { "title": "The cost of finding out", "genre": "opinion", "text": "Some discoveries are risky or expensive. Argue when the search is still worth it." }
+    ],
+    "6": [
+      { "title": "Failed then famous", "genre": "narrative", "text": "Tell the story of a discovery that started as a mistake. Sequence the attempts and the turning point." }
+    ],
+    "7": [
+      { "title": "What counts as proof", "genre": "informative", "text": "Explain how a discovery moved from a hunch to something people could trust." }
+    ],
+    "8": [
+      { "title": "Who gets credit", "genre": "opinion", "text": "Many discoveries involved more than one person. Argue how credit should be shared, using a real example." }
+    ]
+  }
+}

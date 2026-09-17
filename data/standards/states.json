@@ -1,0 +1,1024 @@
+{
+  "jurisdictions": [
+    {
+      "abbr": "AL",
+      "name": "Alabama",
+      "framework": "Alabama College- and Career-Ready Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2015,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "AK",
+      "name": "Alaska",
+      "framework": "Alaska English Language Arts Standards",
+      "alignment": "unique_similar",
+      "year": 2012,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "AZ",
+      "name": "Arizona",
+      "framework": "Arizona English Language Arts Standards",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "AR",
+      "name": "Arkansas",
+      "framework": "Arkansas English Language Arts Standards",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "CA",
+      "name": "California",
+      "framework": "California Common Core State Standards for ELA",
+      "alignment": "ccss",
+      "year": 2013,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "CO",
+      "name": "Colorado",
+      "framework": "Colorado Academic Standards for Reading, Writing, and Communicating",
+      "alignment": "ccss_aligned",
+      "year": 2020,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "CT",
+      "name": "Connecticut",
+      "framework": "Connecticut Core Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "DC",
+      "name": "District of Columbia",
+      "framework": "DC Common Core State Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "DE",
+      "name": "Delaware",
+      "framework": "Delaware Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "FL",
+      "name": "Florida",
+      "framework": "Florida B.E.S.T. Standards for ELA",
+      "alignment": "unique",
+      "year": 2020,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Uses this state's own writing standards (not Common Core numbering).",
+      "standard_count": 60
+    },
+    {
+      "abbr": "GA",
+      "name": "Georgia",
+      "framework": "Georgia Standards of Excellence for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2015,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "HI",
+      "name": "Hawaii",
+      "framework": "Hawaii Common Core Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "ID",
+      "name": "Idaho",
+      "framework": "Idaho Content Standards for ELA/Literacy",
+      "alignment": "unique_similar",
+      "year": 2022,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "IL",
+      "name": "Illinois",
+      "framework": "Illinois Learning Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "IN",
+      "name": "Indiana",
+      "framework": "Indiana Academic Standards for ELA",
+      "alignment": "unique_similar",
+      "year": 2023,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "IA",
+      "name": "Iowa",
+      "framework": "Iowa Core English Language Arts",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "KS",
+      "name": "Kansas",
+      "framework": "Kansas Standards for English Language Arts",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "KY",
+      "name": "Kentucky",
+      "framework": "Kentucky Academic Standards for Reading and Writing",
+      "alignment": "unique_similar",
+      "year": 2019,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "LA",
+      "name": "Louisiana",
+      "framework": "Louisiana Student Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "ME",
+      "name": "Maine",
+      "framework": "Maine Learning Results for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2020,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MD",
+      "name": "Maryland",
+      "framework": "Maryland College and Career Ready Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2011,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MA",
+      "name": "Massachusetts",
+      "framework": "Massachusetts Curriculum Framework for ELA and Literacy",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MI",
+      "name": "Michigan",
+      "framework": "Michigan K-12 Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MN",
+      "name": "Minnesota",
+      "framework": "Minnesota Academic Standards in English Language Arts",
+      "alignment": "unique_similar",
+      "year": 2020,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MS",
+      "name": "Mississippi",
+      "framework": "Mississippi College- and Career-Readiness Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MO",
+      "name": "Missouri",
+      "framework": "Missouri Learning Standards for ELA",
+      "alignment": "unique_similar",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "MT",
+      "name": "Montana",
+      "framework": "Montana Content Standards for ELA and Literacy",
+      "alignment": "ccss_aligned",
+      "year": 2011,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NE",
+      "name": "Nebraska",
+      "framework": "Nebraska College and Career Ready Standards for ELA",
+      "alignment": "unique",
+      "year": 2021,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Uses this state's own writing standards (not Common Core numbering).",
+      "standard_count": 54
+    },
+    {
+      "abbr": "NV",
+      "name": "Nevada",
+      "framework": "Nevada Academic Content Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NH",
+      "name": "New Hampshire",
+      "framework": "New Hampshire College and Career Ready Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NJ",
+      "name": "New Jersey",
+      "framework": "New Jersey Student Learning Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2023,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NM",
+      "name": "New Mexico",
+      "framework": "New Mexico Common Core State Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NY",
+      "name": "New York",
+      "framework": "New York State Next Generation ELA Learning Standards",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "NC",
+      "name": "North Carolina",
+      "framework": "North Carolina Standard Course of Study for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "ND",
+      "name": "North Dakota",
+      "framework": "North Dakota English Language Arts and Literacy Content Standards",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "OH",
+      "name": "Ohio",
+      "framework": "Ohio's Learning Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "OK",
+      "name": "Oklahoma",
+      "framework": "Oklahoma Academic Standards for English Language Arts",
+      "alignment": "unique_similar",
+      "year": 2021,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "OR",
+      "name": "Oregon",
+      "framework": "Oregon English Language Arts and Literacy Standards",
+      "alignment": "ccss",
+      "year": 2019,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "PA",
+      "name": "Pennsylvania",
+      "framework": "Pennsylvania Core Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2014,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "RI",
+      "name": "Rhode Island",
+      "framework": "Rhode Island Core Standards for ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "SC",
+      "name": "South Carolina",
+      "framework": "South Carolina College- and Career-Ready Standards for ELA",
+      "alignment": "unique_similar",
+      "year": 2015,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "SD",
+      "name": "South Dakota",
+      "framework": "South Dakota State Standards for ELA",
+      "alignment": "ccss",
+      "year": 2018,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "TN",
+      "name": "Tennessee",
+      "framework": "Tennessee Academic Standards for ELA",
+      "alignment": "unique_similar",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "State-specific writing standards. Where official machine-readable text is still being ingested, items are crosswalked to CCSS writing constructs so a kid can still be scored against this state's published writing strand.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "TX",
+      "name": "Texas",
+      "framework": "Texas Essential Knowledge and Skills for ELAR",
+      "alignment": "unique",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Uses this state's own writing standards (not Common Core numbering).",
+      "standard_count": 81
+    },
+    {
+      "abbr": "UT",
+      "name": "Utah",
+      "framework": "Utah Core Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2013,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "VT",
+      "name": "Vermont",
+      "framework": "Vermont Early Learning Standards / Common Core ELA",
+      "alignment": "ccss",
+      "year": 2010,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "VA",
+      "name": "Virginia",
+      "framework": "Virginia Standards of Learning for English",
+      "alignment": "unique",
+      "year": 2017,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Uses this state's own writing standards (not Common Core numbering).",
+      "standard_count": 51
+    },
+    {
+      "abbr": "WA",
+      "name": "Washington",
+      "framework": "Washington State K-12 Learning Standards for ELA",
+      "alignment": "ccss",
+      "year": 2011,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "Official writing and language-convention standards follow the CCSS W and L.1\u2013L.2 structure. Reports show this state's framework name with CCSS codes.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "WV",
+      "name": "West Virginia",
+      "framework": "West Virginia College- and Career-Readiness Standards for ELA",
+      "alignment": "ccss_aligned",
+      "year": 2016,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "WI",
+      "name": "Wisconsin",
+      "framework": "Wisconsin Standards for English Language Arts",
+      "alignment": "ccss_aligned",
+      "year": 2020,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    },
+    {
+      "abbr": "WY",
+      "name": "Wyoming",
+      "framework": "Wyoming Language Arts Content and Performance Standards",
+      "alignment": "ccss_aligned",
+      "year": 2012,
+      "grades": [
+        "K",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "note": "This state uses CCSS-based writing/language standards under a state-specific name. Scoring reports CCSS-equivalent W and L codes used in the state's framework.",
+      "standard_count": 288
+    }
+  ]
+}

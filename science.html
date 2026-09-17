@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destination · Summer Writing Squad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/squad.css">
+</head>
+<body data-destination="science">
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <div class="kicker" id="kicker">Destination</div>
+    <h1 class="page-title" id="title">Prompts</h1>
+    <p class="lede" id="lede"></p>
+    <div class="row" style="max-width:420px">
+      <div><label>Grade</label><select id="grade"></select></div>
+    </div>
+    <div class="grid" id="prompts" style="margin-top:1rem"></div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/app.js"></script>
+  <script>
+    const COPY = {
+      history: { title: "Today in History", lede: "Find a real moment, then write about it — story, explanation, opinion, or a letter across time." },
+      science: { title: "Strange Science", lede: "Odd experiments, wild animals, and how-it-works writing with a claim you can support." },
+      letters: { title: "Letters to Family", lede: "Real letters with a real audience: thank-you notes, news, and respectful asks." },
+      discoveries: { title: "Outrageous Discoveries", lede: "Mind-blowing finds, and the writing job of explaining how anyone knew they were true." }
+    };
+    window.onSquadReady = async function () {
+      const dest = document.body.dataset.destination;
+      const meta = COPY[dest];
+      document.title = meta.title + " · Summer Writing Squad";
+      document.getElementById("kicker").textContent = "Pick a prompt";
+      document.getElementById("title").textContent = meta.title;
+      document.getElementById("lede").textContent = meta.lede;
+      const gradeSelect = document.getElementById("grade");
+      const startGrade = (Squad.user && Squad.user.grade) || "3";
+      Squad.fillGrades(gradeSelect, startGrade);
+      async function render() {
+        const data = await Squad.api(`/api/prompts?destination=${dest}&grade=${gradeSelect.value}`);
+        const klass = DESTINATIONS[dest].klass;
+        document.getElementById("prompts").innerHTML = data.prompts.map((p, i) => `
+          <a class="prompt-card ${klass}" href="write.html?destination=${dest}&grade=${gradeSelect.value}&prompt=${i}">
+            <div class="btn-title">${p.title}</div>
+            <div class="btn-desc">${p.text}</div>
+            <span class="genre-pill">${p.genre}</span>
+          </a>`).join("");
+      }
+      gradeSelect.addEventListener("change", render);
+      await render();
+    };
+  </script>
+</body>
+</html>

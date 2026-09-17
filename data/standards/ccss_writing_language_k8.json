@@ -1,0 +1,2327 @@
+{
+  "grades": {
+    "K": [
+      {
+        "code": "L.K.1",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Print many upper- and lowercase letters.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Use frequently occurring nouns and verbs.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Form regular plural nouns orally by adding /s/ or /es/ (e.g., dog, dogs; wish, wishes).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Understand and use question words (interrogatives) (e.g., who, what, where, when, why, how).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Use the most frequently occurring prepositions (e.g., to, from, in, out, on, off, for, of, by, with).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.1.f",
+        "full_code": "CCSS.ELA-LITERACY.L.K.1.f",
+        "strand": "language",
+        "item": "1f",
+        "text": "Produce and expand complete sentences in shared language activities.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.2",
+        "full_code": "CCSS.ELA-LITERACY.L.K.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.K.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Capitalize the first word in a sentence and the pronoun I",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.K.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Recognize and name end punctuation.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.K.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Write a letter or letters for most consonant and short-vowel sounds (phonemes).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.K.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.K.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Spell simple words phonetically, drawing on knowledge of sound-letter relationships.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.K.1",
+        "full_code": "CCSS.ELA-LITERACY.W.K.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Use a combination of drawing, dictating, and writing to compose opinion pieces in which they tell a reader the topic or the name of the book they are writing about and state an opinion or preference about the topic or book (e.g., My favorite book is...).",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.K.2",
+        "full_code": "CCSS.ELA-LITERACY.W.K.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Use a combination of drawing, dictating, and writing to compose informative/explanatory texts in which they name what they are writing about and supply some information about the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.K.3",
+        "full_code": "CCSS.ELA-LITERACY.W.K.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Use a combination of drawing, dictating, and writing to narrate a single event or several loosely linked events, tell about the events in the order in which they occurred, and provide a reaction to what happened.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.K.5",
+        "full_code": "CCSS.ELA-LITERACY.W.K.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from adults, respond to questions and suggestions from peers and add details to strengthen writing as needed.",
+        "construct": "process"
+      },
+      {
+        "code": "W.K.6",
+        "full_code": "CCSS.ELA-LITERACY.W.K.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With guidance and support from adults, explore a variety of digital tools to produce and publish writing, including in collaboration with peers.",
+        "construct": "process"
+      },
+      {
+        "code": "W.K.7",
+        "full_code": "CCSS.ELA-LITERACY.W.K.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Participate in shared research and writing projects (e.g., explore a number of books by a favorite author and express opinions about them).",
+        "construct": "research"
+      },
+      {
+        "code": "W.K.8",
+        "full_code": "CCSS.ELA-LITERACY.W.K.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "With guidance and support from adults, recall information from experiences or gather information from provided sources to answer a question.",
+        "construct": "research"
+      }
+    ],
+    "1": [
+      {
+        "code": "L.1.1",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Print all upper- and lowercase letters.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Use common, proper, and possessive nouns.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Use singular and plural nouns with matching verbs in basic sentences (e.g., He hops; We hop).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Use personal, possessive, and indefinite pronouns (e.g., I, me, my; they, them, their, anyone, everything).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Use verbs to convey a sense of past, present, and future (e.g., Yesterday I walked home; Today I walk home; Tomorrow I will walk home).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.f",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.f",
+        "strand": "language",
+        "item": "1f",
+        "text": "Use frequently occurring adjectives.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.g",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.g",
+        "strand": "language",
+        "item": "1g",
+        "text": "Use frequently occurring conjunctions (e.g., and, but, or, so, because).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.h",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.h",
+        "strand": "language",
+        "item": "1h",
+        "text": "Use determiners (e.g., articles, demonstratives).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.i",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.i",
+        "strand": "language",
+        "item": "1i",
+        "text": "Use frequently occurring prepositions (e.g., during, beyond, toward).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.1.j",
+        "full_code": "CCSS.ELA-LITERACY.L.1.1.j",
+        "strand": "language",
+        "item": "1j",
+        "text": "Produce and expand complete simple and compound declarative, interrogative, imperative, and exclamatory sentences in response to prompts.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Capitalize dates and names of people.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use end punctuation for sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Use commas in dates and to separate single words in a series.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Use conventional spelling for words with common spelling patterns and for frequently occurring irregular words.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.1.2.e",
+        "full_code": "CCSS.ELA-LITERACY.L.1.2.e",
+        "strand": "language",
+        "item": "2e",
+        "text": "Spell untaught words phonetically, drawing on phonemic awareness and spelling conventions.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.1.1",
+        "full_code": "CCSS.ELA-LITERACY.W.1.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write opinion pieces in which they introduce the topic or name the book they are writing about, state an opinion, supply a reason for the opinion, and provide some sense of closure.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.1.2",
+        "full_code": "CCSS.ELA-LITERACY.W.1.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts in which they name a topic, supply some facts about the topic, and provide some sense of closure.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.1.3",
+        "full_code": "CCSS.ELA-LITERACY.W.1.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives in which they recount two or more appropriately sequenced events, include some details regarding what happened, use temporal words to signal event order, and provide some sense of closure.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.1.5",
+        "full_code": "CCSS.ELA-LITERACY.W.1.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from adults, focus on a topic, respond to questions and suggestions from peers, and add details to strengthen writing as needed.",
+        "construct": "process"
+      },
+      {
+        "code": "W.1.6",
+        "full_code": "CCSS.ELA-LITERACY.W.1.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With guidance and support from adults, use a variety of digital tools to produce and publish writing, including in collaboration with peers.",
+        "construct": "process"
+      },
+      {
+        "code": "W.1.7",
+        "full_code": "CCSS.ELA-LITERACY.W.1.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Participate in shared research and writing projects (e.g., explore a number of \"how-to\" books on a given topic and use them to write a sequence of instructions).",
+        "construct": "research"
+      },
+      {
+        "code": "W.1.8",
+        "full_code": "CCSS.ELA-LITERACY.W.1.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "With guidance and support from adults, recall information from experiences or gather information from provided sources to answer a question.",
+        "construct": "research"
+      }
+    ],
+    "2": [
+      {
+        "code": "L.2.1",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Use collective nouns (e.g., group).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Form and use frequently occurring irregular plural nouns (e.g., feet, children, teeth, mice, fish).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Use reflexive pronouns (e.g., myself, ourselves).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Form and use the past tense of frequently occurring irregular verbs (e.g., sat, hid, told).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Use adjectives and adverbs, and choose between them depending on what is to be modified.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.1.f",
+        "full_code": "CCSS.ELA-LITERACY.L.2.1.f",
+        "strand": "language",
+        "item": "1f",
+        "text": "Produce, expand, and rearrange complete simple and compound sentences (e.g., The boy watched the movie; The little boy watched the movie; The action movie was watched by the little boy).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Capitalize holidays, product names, and geographic names.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use commas in greetings and closings of letters.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Use an apostrophe to form contractions and frequently occurring possessives.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Generalize learned spelling patterns when writing words (e.g., cage \u2192 badge; boy \u2192 boil).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.2.2.e",
+        "full_code": "CCSS.ELA-LITERACY.L.2.2.e",
+        "strand": "language",
+        "item": "2e",
+        "text": "Consult reference materials, including beginning dictionaries, as needed to check and correct spellings.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.2.1",
+        "full_code": "CCSS.ELA-LITERACY.W.2.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write opinion pieces in which they introduce the topic or book they are writing about, state an opinion, supply reasons that support the opinion, use linking words (e.g., because, and, also) to connect opinion and reasons, and provide a concluding statement or section.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.2.2",
+        "full_code": "CCSS.ELA-LITERACY.W.2.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts in which they introduce a topic, use facts and definitions to develop points, and provide a concluding statement or section.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.2.3",
+        "full_code": "CCSS.ELA-LITERACY.W.2.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives in which they recount a well-elaborated event or short sequence of events, include details to describe actions, thoughts, and feelings, use temporal words to signal event order, and provide a sense of closure.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.2.5",
+        "full_code": "CCSS.ELA-LITERACY.W.2.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from adults and peers, focus on a topic and strengthen writing as needed by revising and editing.",
+        "construct": "process"
+      },
+      {
+        "code": "W.2.6",
+        "full_code": "CCSS.ELA-LITERACY.W.2.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With guidance and support from adults, use a variety of digital tools to produce and publish writing, including in collaboration with peers.",
+        "construct": "process"
+      },
+      {
+        "code": "W.2.7",
+        "full_code": "CCSS.ELA-LITERACY.W.2.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Participate in shared research and writing projects (e.g., read a number of books on a single topic to produce a report; record science observations).",
+        "construct": "research"
+      },
+      {
+        "code": "W.2.8",
+        "full_code": "CCSS.ELA-LITERACY.W.2.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Recall information from experiences or gather information from provided sources to answer a question.",
+        "construct": "research"
+      }
+    ],
+    "3": [
+      {
+        "code": "L.3.1",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Explain the function of nouns, pronouns, verbs, adjectives, and adverbs in general and their functions in particular sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Form and use regular and irregular plural nouns.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Use abstract nouns (e.g., childhood).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Form and use regular and irregular verbs.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Form and use the simple (e.g., I walked; I walk; I will walk) verb tenses.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.f",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.f",
+        "strand": "language",
+        "item": "1f",
+        "text": "Ensure subject-verb and pronoun-antecedent agreement.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.g",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.g",
+        "strand": "language",
+        "item": "1g",
+        "text": "Form and use comparative and superlative adjectives and adverbs, and choose between them depending on what is to be modified.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.h",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.h",
+        "strand": "language",
+        "item": "1h",
+        "text": "Use coordinating and subordinating conjunctions.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.1.i",
+        "full_code": "CCSS.ELA-LITERACY.L.3.1.i",
+        "strand": "language",
+        "item": "1i",
+        "text": "Produce simple, compound, and complex sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Capitalize appropriate words in titles.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use commas in addresses.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Use commas and quotation marks in dialogue.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Form and use possessives.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.e",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.e",
+        "strand": "language",
+        "item": "2e",
+        "text": "Use conventional spelling for high-frequency and other studied words and for adding suffixes to base words (e.g., sitting, smiled, cries, happiness).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.f",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.f",
+        "strand": "language",
+        "item": "2f",
+        "text": "Use spelling patterns and generalizations (e.g., word families, position-based spellings, syllable patterns, ending rules, meaningful word parts) in writing words.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.3.2.g",
+        "full_code": "CCSS.ELA-LITERACY.L.3.2.g",
+        "strand": "language",
+        "item": "2g",
+        "text": "Consult reference materials, including beginning dictionaries, as needed to check and correct spellings.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.3.1",
+        "full_code": "CCSS.ELA-LITERACY.W.3.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write opinion pieces on topics or texts, supporting a point of view with reasons.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.3.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.3.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce the topic or text they are writing about, state an opinion, and create an organizational structure that lists reasons.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.3.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.3.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Provide reasons that support the opinion.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.3.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.3.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Use linking words and phrases (e.g., because, therefore, since, for example) to connect opinion and reasons.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.3.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.3.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Provide a concluding statement or section.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.3.2",
+        "full_code": "CCSS.ELA-LITERACY.W.3.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.3.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.3.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic and group related information together; include illustrations when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.3.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.3.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with facts, definitions, and details.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.3.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.3.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Use linking words and phrases (e.g., also, another, and, more, but) to connect ideas within categories of information.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.3.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.3.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Provide a concluding statement or section.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.3.3",
+        "full_code": "CCSS.ELA-LITERACY.W.3.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, descriptive details, and clear event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.3.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.3.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Establish a situation and introduce a narrator and/or characters; organize an event sequence that unfolds naturally.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.3.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.3.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use dialogue and descriptions of actions, thoughts, and feelings to develop experiences and events or show the response of characters to situations.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.3.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.3.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use temporal words and phrases to signal event order.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.3.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.3.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Provide a sense of closure.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.3.4",
+        "full_code": "CCSS.ELA-LITERACY.W.3.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "With guidance and support from adults, produce writing in which the development and organization are appropriate to task and purpose. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.3.5",
+        "full_code": "CCSS.ELA-LITERACY.W.3.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, and editing. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 3 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.3.6",
+        "full_code": "CCSS.ELA-LITERACY.W.3.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With guidance and support from adults, use technology to produce and publish writing (using keyboarding skills) as well as to interact and collaborate with others.",
+        "construct": "process"
+      },
+      {
+        "code": "W.3.7",
+        "full_code": "CCSS.ELA-LITERACY.W.3.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects that build knowledge about a topic.",
+        "construct": "research"
+      },
+      {
+        "code": "W.3.8",
+        "full_code": "CCSS.ELA-LITERACY.W.3.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Recall information from experiences or gather information from print and digital sources; take brief notes on sources and sort evidence into provided categories.",
+        "construct": "research"
+      },
+      {
+        "code": "W.3.10",
+        "full_code": "CCSS.ELA-LITERACY.W.3.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ],
+    "4": [
+      {
+        "code": "L.4.1",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Use relative pronouns (who, whose, whom, which, that) and relative adverbs (where, when, why).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Form and use the progressive (e.g., I was walking; I am walking; I will be walking) verb tenses.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Use modal auxiliaries (e.g., can, may, must) to convey various conditions.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Order adjectives within sentences according to conventional patterns (e.g., a small red bag rather than a red small bag).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Form and use prepositional phrases.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.f",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.f",
+        "strand": "language",
+        "item": "1f",
+        "text": "Produce complete sentences, recognizing and correcting inappropriate fragments and run-ons.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.1.g",
+        "full_code": "CCSS.ELA-LITERACY.L.4.1.g",
+        "strand": "language",
+        "item": "1g",
+        "text": "Correctly use frequently confused words (e.g., to, too, two; there, their).*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.2",
+        "full_code": "CCSS.ELA-LITERACY.L.4.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.4.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Use correct capitalization.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.4.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use commas and quotation marks to mark direct speech and quotations from a text.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.4.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Use a comma before a coordinating conjunction in a compound sentence.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.4.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.4.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Spell grade-appropriate words correctly, consulting references as needed.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.4.1",
+        "full_code": "CCSS.ELA-LITERACY.W.4.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write opinion pieces on topics or texts, supporting a point of view with reasons and information.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.4.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.4.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce a topic or text clearly, state an opinion, and create an organizational structure in which related ideas are grouped to support the writer's purpose.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.4.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.4.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Provide reasons that are supported by facts and details.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.4.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.4.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Link opinion and reasons using words and phrases (e.g., for instance, in order to, in addition).",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.4.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.4.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Provide a concluding statement or section related to the opinion presented.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.4.2",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic clearly and group related information in paragraphs and sections; include formatting (e.g., headings), illustrations, and multimedia when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with facts, definitions, concrete details, quotations, or other information and examples related to the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Link ideas within categories of information using words and phrases (e.g., another, for example, also, because).",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Use precise language and domain-specific vocabulary to inform about or explain the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.2.e",
+        "full_code": "CCSS.ELA-LITERACY.W.4.2.e",
+        "strand": "writing",
+        "item": "2e",
+        "text": "Provide a concluding statement or section related to the information or explanation presented.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.4.3",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, descriptive details, and clear event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Orient the reader by establishing a situation and introducing a narrator and/or characters; organize an event sequence that unfolds naturally.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use dialogue and description to develop experiences and events or show the responses of characters to situations.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use a variety of transitional words and phrases to manage the sequence of events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Use concrete words and phrases and sensory details to convey experiences and events precisely.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.3.e",
+        "full_code": "CCSS.ELA-LITERACY.W.4.3.e",
+        "strand": "writing",
+        "item": "3e",
+        "text": "Provide a conclusion that follows from the narrated experiences or events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.4.4",
+        "full_code": "CCSS.ELA-LITERACY.W.4.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "Produce clear and coherent writing in which the development and organization are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.4.5",
+        "full_code": "CCSS.ELA-LITERACY.W.4.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, and editing. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 4 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.4.6",
+        "full_code": "CCSS.ELA-LITERACY.W.4.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With some guidance and support from adults, use technology, including the Internet, to produce and publish writing as well as to interact and collaborate with others; demonstrate sufficient command of keyboarding skills to type a minimum of one page in a single sitting.",
+        "construct": "process"
+      },
+      {
+        "code": "W.4.7",
+        "full_code": "CCSS.ELA-LITERACY.W.4.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects that build knowledge through investigation of different aspects of a topic.",
+        "construct": "research"
+      },
+      {
+        "code": "W.4.8",
+        "full_code": "CCSS.ELA-LITERACY.W.4.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Recall relevant information from experiences or gather relevant information from print and digital sources; take notes and categorize information, and provide a list of sources.",
+        "construct": "research"
+      },
+      {
+        "code": "W.4.9",
+        "full_code": "CCSS.ELA-LITERACY.W.4.9",
+        "strand": "writing",
+        "item": "9",
+        "text": "Draw evidence from literary or informational texts to support analysis, reflection, and research.",
+        "construct": "research"
+      },
+      {
+        "code": "W.4.9.a",
+        "full_code": "CCSS.ELA-LITERACY.W.4.9.a",
+        "strand": "writing",
+        "item": "9a",
+        "text": "Apply grade 4 Reading standards to literature (e.g., \"Describe in depth a character, setting, or event in a story or drama, drawing on specific details in the text [e.g., a character's thoughts, words, or actions].\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.4.9.b",
+        "full_code": "CCSS.ELA-LITERACY.W.4.9.b",
+        "strand": "writing",
+        "item": "9b",
+        "text": "Apply grade 4 Reading standards to informational texts (e.g., \"Explain how an author uses reasons and evidence to support particular points in a text\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.4.10",
+        "full_code": "CCSS.ELA-LITERACY.W.4.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ],
+    "5": [
+      {
+        "code": "L.5.1",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Explain the function of conjunctions, prepositions, and interjections in general and their function in particular sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Form and use the perfect (e.g., I had walked; I have walked; I will have walked) verb tenses.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Use verb tense to convey various times, sequences, states, and conditions.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Recognize and correct inappropriate shifts in verb tense.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.5.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Use correlative conjunctions (e.g., either/or, neither/nor).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Use punctuation to separate items in a series.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use a comma to separate an introductory element from the rest of the sentence.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Use a comma to set off the words yes and no (e.g., Yes, thank you), to set off a tag question from the rest of the sentence (e.g., It's true, isn't it?), and to indicate direct address (e.g., Is that you, Steve?).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2.d",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2.d",
+        "strand": "language",
+        "item": "2d",
+        "text": "Use underlining, quotation marks, or italics to indicate titles of works.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.5.2.e",
+        "full_code": "CCSS.ELA-LITERACY.L.5.2.e",
+        "strand": "language",
+        "item": "2e",
+        "text": "Spell grade-appropriate words correctly, consulting references as needed.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.5.1",
+        "full_code": "CCSS.ELA-LITERACY.W.5.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write opinion pieces on topics or texts, supporting a point of view with reasons and information.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.5.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.5.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce a topic or text clearly, state an opinion, and create an organizational structure in which ideas are logically grouped to support the writer's purpose.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.5.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.5.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Provide logically ordered reasons that are supported by facts and details.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.5.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.5.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Link opinion and reasons using words, phrases, and clauses (e.g., consequently, specifically).",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.5.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.5.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Provide a concluding statement or section related to the opinion presented.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.5.2",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas and information clearly.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic clearly, provide a general observation and focus, and group related information logically; include formatting (e.g., headings), illustrations, and multimedia when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with facts, definitions, concrete details, quotations, or other information and examples related to the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Link ideas within and across categories of information using words, phrases, and clauses (e.g., in contrast, especially).",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Use precise language and domain-specific vocabulary to inform about or explain the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.2.e",
+        "full_code": "CCSS.ELA-LITERACY.W.5.2.e",
+        "strand": "writing",
+        "item": "2e",
+        "text": "Provide a concluding statement or section related to the information or explanation presented.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.5.3",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, descriptive details, and clear event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Orient the reader by establishing a situation and introducing a narrator and/or characters; organize an event sequence that unfolds naturally.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use narrative techniques, such as dialogue, description, and pacing, to develop experiences and events or show the responses of characters to situations.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use a variety of transitional words, phrases, and clauses to manage the sequence of events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Use concrete words and phrases and sensory details to convey experiences and events precisely.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.3.e",
+        "full_code": "CCSS.ELA-LITERACY.W.5.3.e",
+        "strand": "writing",
+        "item": "3e",
+        "text": "Provide a conclusion that follows from the narrated experiences or events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.5.4",
+        "full_code": "CCSS.ELA-LITERACY.W.5.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "Produce clear and coherent writing in which the development and organization are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.5.5",
+        "full_code": "CCSS.ELA-LITERACY.W.5.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 5 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.5.6",
+        "full_code": "CCSS.ELA-LITERACY.W.5.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "With some guidance and support from adults, use technology, including the Internet, to produce and publish writing as well as to interact and collaborate with others; demonstrate sufficient command of keyboarding skills to type a minimum of two pages in a single sitting.",
+        "construct": "process"
+      },
+      {
+        "code": "W.5.7",
+        "full_code": "CCSS.ELA-LITERACY.W.5.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects that use several sources to build knowledge through investigation of different aspects of a topic.",
+        "construct": "research"
+      },
+      {
+        "code": "W.5.8",
+        "full_code": "CCSS.ELA-LITERACY.W.5.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Recall relevant information from experiences or gather relevant information from print and digital sources; summarize or paraphrase information in notes and finished work, and provide a list of sources.",
+        "construct": "research"
+      },
+      {
+        "code": "W.5.9",
+        "full_code": "CCSS.ELA-LITERACY.W.5.9",
+        "strand": "writing",
+        "item": "9",
+        "text": "Draw evidence from literary or informational texts to support analysis, reflection, and research.",
+        "construct": "research"
+      },
+      {
+        "code": "W.5.9.a",
+        "full_code": "CCSS.ELA-LITERACY.W.5.9.a",
+        "strand": "writing",
+        "item": "9a",
+        "text": "Apply grade 5 Reading standards to literature (e.g., \"Compare and contrast two or more characters, settings, or events in a story or a drama, drawing on specific details in the text [e.g., how characters interact]\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.5.9.b",
+        "full_code": "CCSS.ELA-LITERACY.W.5.9.b",
+        "strand": "writing",
+        "item": "9b",
+        "text": "Apply grade 5 Reading standards to informational texts (e.g., \"Explain how an author uses reasons and evidence to support particular points in a text, identifying which reasons and evidence support which point[s]\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.5.10",
+        "full_code": "CCSS.ELA-LITERACY.W.5.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ],
+    "6": [
+      {
+        "code": "L.6.1",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Ensure that pronouns are in the proper case (subjective, objective, possessive).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Use intensive pronouns (e.g., myself, ourselves).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Recognize and correct inappropriate shifts in pronoun number and person.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Recognize and correct vague pronouns (i.e., ones with unclear or ambiguous antecedents).*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.1.e",
+        "full_code": "CCSS.ELA-LITERACY.L.6.1.e",
+        "strand": "language",
+        "item": "1e",
+        "text": "Recognize variations from standard English in their own and others' writing and speaking, and identify and use strategies to improve expression in conventional language.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.2",
+        "full_code": "CCSS.ELA-LITERACY.L.6.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.6.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Use punctuation (commas, parentheses, dashes) to set off nonrestrictive/parenthetical elements.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.6.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.6.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Spell correctly.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.6.1",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write arguments to support claims with clear reasons and relevant evidence.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce claim(s) and organize the reasons and evidence clearly.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Support claim(s) with clear reasons and relevant evidence, using credible sources and demonstrating an understanding of the topic or text.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Use words, phrases, and clauses to clarify the relationships among claim(s) and reasons.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Establish and maintain a formal style.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.1.e",
+        "full_code": "CCSS.ELA-LITERACY.W.6.1.e",
+        "strand": "writing",
+        "item": "1e",
+        "text": "Provide a concluding statement or section that follows from the argument presented.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.6.2",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic; organize ideas, concepts, and information, using strategies such as definition, classification, comparison/contrast, and cause/effect; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with relevant facts, definitions, concrete details, quotations, or other information and examples.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Use appropriate transitions to clarify the relationships among ideas and concepts.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Use precise language and domain-specific vocabulary to inform about or explain the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.e",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.e",
+        "strand": "writing",
+        "item": "2e",
+        "text": "Establish and maintain a formal style.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.2.f",
+        "full_code": "CCSS.ELA-LITERACY.W.6.2.f",
+        "strand": "writing",
+        "item": "2f",
+        "text": "Provide a concluding statement or section that follows from the information or explanation presented.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.6.3",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Engage and orient the reader by establishing a context and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use narrative techniques, such as dialogue, pacing, and description, to develop experiences, events, and/or characters.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use a variety of transition words, phrases, and clauses to convey sequence and signal shifts from one time frame or setting to another.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Use precise words and phrases, relevant descriptive details, and sensory language to convey experiences and events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.3.e",
+        "full_code": "CCSS.ELA-LITERACY.W.6.3.e",
+        "strand": "writing",
+        "item": "3e",
+        "text": "Provide a conclusion that follows from the narrated experiences or events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.6.4",
+        "full_code": "CCSS.ELA-LITERACY.W.6.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.6.5",
+        "full_code": "CCSS.ELA-LITERACY.W.6.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 6 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.6.6",
+        "full_code": "CCSS.ELA-LITERACY.W.6.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "Use technology, including the Internet, to produce and publish writing as well as to interact and collaborate with others; demonstrate sufficient command of keyboarding skills to type a minimum of three pages in a single sitting.",
+        "construct": "process"
+      },
+      {
+        "code": "W.6.7",
+        "full_code": "CCSS.ELA-LITERACY.W.6.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects to answer a question, drawing on several sources and refocusing the inquiry when appropriate.",
+        "construct": "research"
+      },
+      {
+        "code": "W.6.8",
+        "full_code": "CCSS.ELA-LITERACY.W.6.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Gather relevant information from multiple print and digital sources; assess the credibility of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and providing basic bibliographic information for sources.",
+        "construct": "research"
+      },
+      {
+        "code": "W.6.9",
+        "full_code": "CCSS.ELA-LITERACY.W.6.9",
+        "strand": "writing",
+        "item": "9",
+        "text": "Draw evidence from literary or informational texts to support analysis, reflection, and research.",
+        "construct": "research"
+      },
+      {
+        "code": "W.6.9.a",
+        "full_code": "CCSS.ELA-LITERACY.W.6.9.a",
+        "strand": "writing",
+        "item": "9a",
+        "text": "Apply grade 6 Reading standards to literature (e.g., \"Compare and contrast texts in different forms or genres [e.g., stories and poems; historical novels and fantasy stories] in terms of their approaches to similar themes and topics\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.6.9.b",
+        "full_code": "CCSS.ELA-LITERACY.W.6.9.b",
+        "strand": "writing",
+        "item": "9b",
+        "text": "Apply grade 6 Reading standards to literary nonfiction (e.g., \"Trace and evaluate the argument and specific claims in a text, distinguishing claims that are supported by reasons and evidence from claims that are not\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.6.10",
+        "full_code": "CCSS.ELA-LITERACY.W.6.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ],
+    "7": [
+      {
+        "code": "L.7.1",
+        "full_code": "CCSS.ELA-LITERACY.L.7.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.7.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Explain the function of phrases and clauses in general and their function in specific sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.7.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Choose among simple, compound, complex, and compound-complex sentences to signal differing relationships among ideas.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.7.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Place phrases and clauses within a sentence, recognizing and correcting misplaced and dangling modifiers.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.2",
+        "full_code": "CCSS.ELA-LITERACY.L.7.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.7.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Use a comma to separate coordinate adjectives (e.g., It was a fascinating, enjoyable movie but not He wore an old[,] green shirt).",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.7.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.7.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Spell correctly.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.7.1",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write arguments to support claims with clear reasons and relevant evidence.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce claim(s), acknowledge alternate or opposing claims, and organize the reasons and evidence logically.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Support claim(s) with logical reasoning and relevant evidence, using accurate, credible sources and demonstrating an understanding of the topic or text.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Use words, phrases, and clauses to create cohesion and clarify the relationships among claim(s), reasons, and evidence.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Establish and maintain a formal style.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.1.e",
+        "full_code": "CCSS.ELA-LITERACY.W.7.1.e",
+        "strand": "writing",
+        "item": "1e",
+        "text": "Provide a concluding statement or section that follows from and supports the argument presented.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.7.2",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic clearly, previewing what is to follow; organize ideas, concepts, and information, using strategies such as definition, classification, comparison/contrast, and cause/effect; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with relevant facts, definitions, concrete details, quotations, or other information and examples.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Use appropriate transitions to create cohesion and clarify the relationships among ideas and concepts.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Use precise language and domain-specific vocabulary to inform about or explain the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.e",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.e",
+        "strand": "writing",
+        "item": "2e",
+        "text": "Establish and maintain a formal style.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.2.f",
+        "full_code": "CCSS.ELA-LITERACY.W.7.2.f",
+        "strand": "writing",
+        "item": "2f",
+        "text": "Provide a concluding statement or section that follows from and supports the information or explanation presented.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.7.3",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Engage and orient the reader by establishing a context and point of view and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use narrative techniques, such as dialogue, pacing, and description, to develop experiences, events, and/or characters.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use a variety of transition words, phrases, and clauses to convey sequence and signal shifts from one time frame or setting to another.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Use precise words and phrases, relevant descriptive details, and sensory language to capture the action and convey experiences and events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.3.e",
+        "full_code": "CCSS.ELA-LITERACY.W.7.3.e",
+        "strand": "writing",
+        "item": "3e",
+        "text": "Provide a conclusion that follows from and reflects on the narrated experiences or events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.7.4",
+        "full_code": "CCSS.ELA-LITERACY.W.7.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.7.5",
+        "full_code": "CCSS.ELA-LITERACY.W.7.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on how well purpose and audience have been addressed. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 7 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.7.6",
+        "full_code": "CCSS.ELA-LITERACY.W.7.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "Use technology, including the Internet, to produce and publish writing and link to and cite sources as well as to interact and collaborate with others, including linking to and citing sources.",
+        "construct": "process"
+      },
+      {
+        "code": "W.7.7",
+        "full_code": "CCSS.ELA-LITERACY.W.7.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects to answer a question, drawing on several sources and generating additional related, focused questions for further research and investigation.",
+        "construct": "research"
+      },
+      {
+        "code": "W.7.8",
+        "full_code": "CCSS.ELA-LITERACY.W.7.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Gather relevant information from multiple print and digital sources, using search terms effectively; assess the credibility and accuracy of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and following a standard format for citation.",
+        "construct": "research"
+      },
+      {
+        "code": "W.7.9",
+        "full_code": "CCSS.ELA-LITERACY.W.7.9",
+        "strand": "writing",
+        "item": "9",
+        "text": "Draw evidence from literary or informational texts to support analysis, reflection, and research.",
+        "construct": "research"
+      },
+      {
+        "code": "W.7.9.a",
+        "full_code": "CCSS.ELA-LITERACY.W.7.9.a",
+        "strand": "writing",
+        "item": "9a",
+        "text": "Apply grade 7 Reading standards to literature (e.g., \"Compare and contrast a fictional portrayal of a time, place, or character and a historical account of the same period as a means of understanding how authors of fiction use or alter history\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.7.9.b",
+        "full_code": "CCSS.ELA-LITERACY.W.7.9.b",
+        "strand": "writing",
+        "item": "9b",
+        "text": "Apply grade 7 Reading standards to literary nonfiction (e.g. \"Trace and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient to support the claims\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.7.10",
+        "full_code": "CCSS.ELA-LITERACY.W.7.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ],
+    "8": [
+      {
+        "code": "L.8.1",
+        "full_code": "CCSS.ELA-LITERACY.L.8.1",
+        "strand": "language",
+        "item": "1",
+        "text": "Demonstrate command of the conventions of standard English grammar and usage when writing or speaking.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.1.a",
+        "full_code": "CCSS.ELA-LITERACY.L.8.1.a",
+        "strand": "language",
+        "item": "1a",
+        "text": "Explain the function of verbals (gerunds, participles, infinitives) in general and their function in particular sentences.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.1.b",
+        "full_code": "CCSS.ELA-LITERACY.L.8.1.b",
+        "strand": "language",
+        "item": "1b",
+        "text": "Form and use verbs in the active and passive voice.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.1.c",
+        "full_code": "CCSS.ELA-LITERACY.L.8.1.c",
+        "strand": "language",
+        "item": "1c",
+        "text": "Form and use verbs in the indicative, imperative, interrogative, conditional, and subjunctive mood.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.1.d",
+        "full_code": "CCSS.ELA-LITERACY.L.8.1.d",
+        "strand": "language",
+        "item": "1d",
+        "text": "Recognize and correct inappropriate shifts in verb voice and mood.*",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.2",
+        "full_code": "CCSS.ELA-LITERACY.L.8.2",
+        "strand": "language",
+        "item": "2",
+        "text": "Demonstrate command of the conventions of standard English capitalization, punctuation, and spelling when writing.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.2.a",
+        "full_code": "CCSS.ELA-LITERACY.L.8.2.a",
+        "strand": "language",
+        "item": "2a",
+        "text": "Use punctuation (comma, ellipsis, dash) to indicate a pause or break.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.2.b",
+        "full_code": "CCSS.ELA-LITERACY.L.8.2.b",
+        "strand": "language",
+        "item": "2b",
+        "text": "Use an ellipsis to indicate an omission.",
+        "construct": "conventions"
+      },
+      {
+        "code": "L.8.2.c",
+        "full_code": "CCSS.ELA-LITERACY.L.8.2.c",
+        "strand": "language",
+        "item": "2c",
+        "text": "Spell correctly.",
+        "construct": "conventions"
+      },
+      {
+        "code": "W.8.1",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1",
+        "strand": "writing",
+        "item": "1",
+        "text": "Write arguments to support claims with clear reasons and relevant evidence",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.1.a",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1.a",
+        "strand": "writing",
+        "item": "1a",
+        "text": "Introduce claim(s), acknowledge and distinguish the claim(s) from alternate or opposing claims, and organize the reasons and evidence logically.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.1.b",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1.b",
+        "strand": "writing",
+        "item": "1b",
+        "text": "Support claim(s) with logical reasoning and relevant evidence, using accurate, credible sources and demonstrating an understanding of the topic or text.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.1.c",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1.c",
+        "strand": "writing",
+        "item": "1c",
+        "text": "Use words, phrases, and clauses to create cohesion and clarify the relationships among claim(s), counterclaims, reasons, and evidence.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.1.d",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1.d",
+        "strand": "writing",
+        "item": "1d",
+        "text": "Establish and maintain a formal style.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.1.e",
+        "full_code": "CCSS.ELA-LITERACY.W.8.1.e",
+        "strand": "writing",
+        "item": "1e",
+        "text": "Provide a concluding statement or section that follows from and supports the argument presented.",
+        "construct": "opinion"
+      },
+      {
+        "code": "W.8.2",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2",
+        "strand": "writing",
+        "item": "2",
+        "text": "Write informative/explanatory texts to examine a topic and convey ideas, concepts, and information through the selection, organization, and analysis of relevant content.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.a",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.a",
+        "strand": "writing",
+        "item": "2a",
+        "text": "Introduce a topic clearly, previewing what is to follow; organize ideas, concepts, and information into broader categories; include formatting (e.g., headings), graphics (e.g., charts, tables), and multimedia when useful to aiding comprehension.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.b",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.b",
+        "strand": "writing",
+        "item": "2b",
+        "text": "Develop the topic with relevant, well-chosen facts, definitions, concrete details, quotations, or other information and examples.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.c",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.c",
+        "strand": "writing",
+        "item": "2c",
+        "text": "Use appropriate and varied transitions to create cohesion and clarify the relationships among ideas and concepts.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.d",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.d",
+        "strand": "writing",
+        "item": "2d",
+        "text": "Use precise language and domain-specific vocabulary to inform about or explain the topic.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.e",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.e",
+        "strand": "writing",
+        "item": "2e",
+        "text": "Establish and maintain a formal style.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.2.F",
+        "full_code": "CCSS.ELA-LITERACY.W.8.2.F",
+        "strand": "writing",
+        "item": "2F",
+        "text": "Provide a concluding statement or section that follows from and supports the information or explanation presented.",
+        "construct": "informative"
+      },
+      {
+        "code": "W.8.3",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3",
+        "strand": "writing",
+        "item": "3",
+        "text": "Write narratives to develop real or imagined experiences or events using effective technique, relevant descriptive details, and well-structured event sequences.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.3.a",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3.a",
+        "strand": "writing",
+        "item": "3a",
+        "text": "Engage and orient the reader by establishing a context and point of view and introducing a narrator and/or characters; organize an event sequence that unfolds naturally and logically.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.3.b",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3.b",
+        "strand": "writing",
+        "item": "3b",
+        "text": "Use narrative techniques, such as dialogue, pacing, description, and reflection, to develop experiences, events, and/or characters.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.3.c",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3.c",
+        "strand": "writing",
+        "item": "3c",
+        "text": "Use a variety of transition words, phrases, and clauses to convey sequence, signal shifts from one time frame or setting to another, and show the relationships among experiences and events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.3.d",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3.d",
+        "strand": "writing",
+        "item": "3d",
+        "text": "Use precise words and phrases, relevant descriptive details, and sensory language to capture the action and convey experiences and events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.3.e",
+        "full_code": "CCSS.ELA-LITERACY.W.8.3.e",
+        "strand": "writing",
+        "item": "3e",
+        "text": "Provide a conclusion that follows from and reflects on the narrated experiences or events.",
+        "construct": "narrative"
+      },
+      {
+        "code": "W.8.4",
+        "full_code": "CCSS.ELA-LITERACY.W.8.4",
+        "strand": "writing",
+        "item": "4",
+        "text": "Produce clear and coherent writing in which the development, organization, and style are appropriate to task, purpose, and audience. (Grade-specific expectations for writing types are defined in standards 1-3 above.)",
+        "construct": "organization"
+      },
+      {
+        "code": "W.8.5",
+        "full_code": "CCSS.ELA-LITERACY.W.8.5",
+        "strand": "writing",
+        "item": "5",
+        "text": "With some guidance and support from peers and adults, develop and strengthen writing as needed by planning, revising, editing, rewriting, or trying a new approach, focusing on how well purpose and audience have been addressed. (Editing for conventions should demonstrate command of Language standards 1-3 up to and including grade 8 here.)",
+        "construct": "process"
+      },
+      {
+        "code": "W.8.6",
+        "full_code": "CCSS.ELA-LITERACY.W.8.6",
+        "strand": "writing",
+        "item": "6",
+        "text": "Use technology, including the Internet, to produce and publish writing and present the relationships between information and ideas efficiently as well as to interact and collaborate with others.",
+        "construct": "process"
+      },
+      {
+        "code": "W.8.7",
+        "full_code": "CCSS.ELA-LITERACY.W.8.7",
+        "strand": "writing",
+        "item": "7",
+        "text": "Conduct short research projects to answer a question (including a self-generated question), drawing on several sources and generating additional related, focused questions that allow for multiple avenues of exploration.",
+        "construct": "research"
+      },
+      {
+        "code": "W.8.8",
+        "full_code": "CCSS.ELA-LITERACY.W.8.8",
+        "strand": "writing",
+        "item": "8",
+        "text": "Gather relevant information from multiple print and digital sources, using search terms effectively; assess the credibility and accuracy of each source; and quote or paraphrase the data and conclusions of others while avoiding plagiarism and following a standard format for citation.",
+        "construct": "research"
+      },
+      {
+        "code": "W.8.9",
+        "full_code": "CCSS.ELA-LITERACY.W.8.9",
+        "strand": "writing",
+        "item": "9",
+        "text": "Draw evidence from literary or informational texts to support analysis, reflection, and research.",
+        "construct": "research"
+      },
+      {
+        "code": "W.8.9.a",
+        "full_code": "CCSS.ELA-LITERACY.W.8.9.a",
+        "strand": "writing",
+        "item": "9a",
+        "text": "Apply grade 8 Reading standards to literature (e.g., \"Analyze how a modern work of fiction draws on themes, patterns of events, or character types from myths, traditional stories, or religious works such as the Bible, including describing how the material is rendered new\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.8.9.b",
+        "full_code": "CCSS.ELA-LITERACY.W.8.9.b",
+        "strand": "writing",
+        "item": "9b",
+        "text": "Apply grade 8 Reading standards to literary nonfiction (e.g., \"Delineate and evaluate the argument and specific claims in a text, assessing whether the reasoning is sound and the evidence is relevant and sufficient; recognize when irrelevant evidence is introduced\").",
+        "construct": "research"
+      },
+      {
+        "code": "W.8.10",
+        "full_code": "CCSS.ELA-LITERACY.W.8.10",
+        "strand": "writing",
+        "item": "10",
+        "text": "Write routinely over extended time frames (time for research, reflection, and revision) and shorter time frames (a single sitting or a day or two) for a range of discipline-specific tasks, purposes, and audiences.",
+        "construct": "process"
+      }
+    ]
+  },
+  "source": "CCSS ELA-Literacy Writing and Language (conventions L.1\u2013L.2), K\u20138"
+}

@@ -1,0 +1,45 @@
+{
+  "scale": [1, 2, 3, 4],
+  "labels": {
+    "1": "Not yet",
+    "2": "Developing",
+    "3": "Meeting",
+    "4": "Exceeding"
+  },
+  "free_assessments": 3,
+  "plans": {
+    "free": { "name": "Try it", "price": 0, "assessments": 3, "blurb": "Three scored pieces so you can see how the coach works." },
+    "family": { "name": "Family", "price_month": 9, "assessments": null, "blurb": "Unlimited scoring for kids in one household, any state and grade K–8." },
+    "classroom": { "name": "Classroom", "price_month": 19, "assessments": null, "blurb": "Unlimited scoring plus a simple roster for one class." }
+  },
+  "length_bands": {
+    "K": { "developing": 8, "meeting": 18, "exceeding": 40 },
+    "1": { "developing": 20, "meeting": 40, "exceeding": 80 },
+    "2": { "developing": 40, "meeting": 70, "exceeding": 120 },
+    "3": { "developing": 70, "meeting": 110, "exceeding": 180 },
+    "4": { "developing": 90, "meeting": 140, "exceeding": 220 },
+    "5": { "developing": 110, "meeting": 170, "exceeding": 260 },
+    "6": { "developing": 140, "meeting": 210, "exceeding": 320 },
+    "7": { "developing": 160, "meeting": 240, "exceeding": 360 },
+    "8": { "developing": 180, "meeting": 270, "exceeding": 400 }
+  },
+  "sentence_bands": {
+    "K": { "developing": 1, "meeting": 2, "exceeding": 4 },
+    "1": { "developing": 2, "meeting": 4, "exceeding": 6 },
+    "2": { "developing": 3, "meeting": 5, "exceeding": 8 },
+    "3": { "developing": 4, "meeting": 6, "exceeding": 10 },
+    "4": { "developing": 5, "meeting": 8, "exceeding": 12 },
+    "5": { "developing": 6, "meeting": 9, "exceeding": 14 },
+    "6": { "developing": 7, "meeting": 10, "exceeding": 16 },
+    "7": { "developing": 8, "meeting": 12, "exceeding": 18 },
+    "8": { "developing": 8, "meeting": 12, "exceeding": 20 }
+  },
+  "word_lists": {
+    "opinion": ["i think", "i believe", "in my opinion", "should", "should not", "the best", "agree", "disagree", "claim", "argue", "reason"],
+    "informative": ["for example", "for instance", "this means", "in fact", "according to", "the reason", "also", "another", "finally", "in conclusion"],
+    "narrative": ["once", "then", "after that", "suddenly", "finally", "the next day", "later", "meanwhile", "at last", "i felt", "i saw"],
+    "correspondence": ["dear", "sincerely", "from,", "love,", "thank you", "please", "write back"],
+    "evidence": ["because", "for example", "the article", "the source", "according to", "the fact", "this shows", "evidence"],
+    "temporal": ["first", "next", "then", "after", "before", "finally", "later", "yesterday", "today", "tomorrow"]
+  }
+}

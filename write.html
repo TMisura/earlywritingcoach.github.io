@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Write · Summer Writing Squad</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/squad.css">
+</head>
+<body>
+  <header class="site-header" id="site-header"></header>
+  <main class="wrap">
+    <div class="kicker" id="dest-kicker">Writing studio</div>
+    <h1 class="page-title" id="prompt-title">Pick a prompt and write</h1>
+    <p class="lede" id="prompt-text">Choose a destination, or start from a blank page. We’ll score this against your state’s grade-level writing standards.</p>
+    <div class="card" style="margin-top:1.5rem">
+      <div class="row">
+        <div><label for="state">State / DC</label><select id="state"></select></div>
+        <div><label for="grade">Grade</label><select id="grade"></select></div>
+        <div><label for="genre">Kind of writing</label>
+          <select id="genre">
+            <option value="opinion">Opinion / argument</option>
+            <option value="informative">Informative</option>
+            <option value="narrative">Narrative</option>
+            <option value="correspondence">Letter</option>
+          </select>
+        </div>
+      </div>
+      <label for="draft">Your writing</label>
+      <textarea id="draft" placeholder="Start here. A beginning, a middle, and an end is plenty."></textarea>
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px;gap:12px;flex-wrap:wrap">
+        <span class="muted" id="counts">0 words</span>
+        <button class="btn btn-primary" id="submit">Score this writing</button>
+      </div>
+      <p class="error" id="err" hidden></p>
+    </div>
+  </main>
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="assets/app.js"></script>
+  <script>
+    window.onSquadReady = async function () {
+      const params = Squad.params();
+      const dest = params.get("destination") || "history";
+      const gradeSelect = document.getElementById("grade");
+      const stateSelect = document.getElementById("state");
+      const user = Squad.user;
+      Squad.fillGrades(gradeSelect, user && user.grade || params.get("grade") || "3");
+      await Squad.fillStates(stateSelect, user && user.state || params.get("state") || "CA");
+      const grade = gradeSelect.value;
+      const destMeta = DESTINATIONS[dest] || DESTINATIONS.history;
+      document.getElementById("dest-kicker").textContent = destMeta.title;
+      const data = await Squad.api(`/api/prompts?destination=${encodeURIComponent(dest)}&grade=${encodeURIComponent(grade)}`);
+      const idx = Number(params.get("prompt") || 0);
+      const prompt = data.prompts[idx] || data.prompts[0];
+      if (prompt) {
+        document.getElementById("prompt-title").textContent = prompt.title;
+        document.getElementById("prompt-text").textContent = prompt.text;
+        document.getElementById("genre").value = prompt.genre === "letter" ? "correspondence" : prompt.genre;
+        document.title = prompt.title + " · Summer Writing Squad";
+      }
+      const draft = document.getElementById("draft");
+      const counts = document.getElementById("counts");
+      function updateCount() {
+        const n = (draft.value.trim().match(/[A-Za-z']+/g) || []).length;
+        counts.textContent = n + " words";
+      }
+      draft.addEventListener("input", updateCount);
+      gradeSelect.addEventListener("change", () => {
+        location.href = `write.html?destination=${dest}&grade=${gradeSelect.value}&state=${stateSelect.value}`;
+      });
+      document.getElementById("submit").addEventListener("click", async () => {
+        const err = document.getElementById("err");
+        err.hidden = true;
+        try {
+          const result = await Squad.api("/api/assess", {
+            method: "POST",
+            body: JSON.stringify({
+              text: draft.value,
+              state: stateSelect.value,
+              grade: gradeSelect.value,
+              genre: document.getElementById("genre").value,
+              prompt_title: document.getElementById("prompt-title").textContent
+            })
+          });
+          sessionStorage.setItem("squad-result", JSON.stringify({ ...result, text: draft.value, prompt_title: document.getElementById("prompt-title").textContent }));
+          location.href = result.id ? `report.html?id=${result.id}` : "report.html";
+        } catch (e) {
+          if (e.status === 402) {
+            err.hidden = false;
+            err.innerHTML = 'Free scoring is used up. <a href="account.html">Open a Family plan</a> to keep going.';
+            return;
+          }
+          err.hidden = false;
+          err.textContent = e.message;
+        }
+      });
+    };
+  </script>
+</body>
+</html>
